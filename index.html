@@ -23,21 +23,46 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body id="goRoamBody">
+  <body id="goRoamBody" class="go-roam-body">
+    <!-- mobile nav -->
+    <div class="mobile-nav">
+      <div class="mobile-logo">
+        <img
+          src="./assets/image/new_logo-blue.png"
+          class="mb-link"
+          alt="logo"
+        />
+      </div>
+      <div class="mobile-links flex-top-column-start">
+        <a href="#" class="mb-link">Explore</a>
+        <a href="#" class="mb-link">About Us</a>
+        <a href="#" class="mb-link">Log In</a>
+        <a href="#" class="mb-link nav-lang">
+          <img src="./assets/image/lang-icon-dark.png" alt="lang" />
+          English
+        </a>
+      </div>
+    </div>
     <!-- nav container -->
     <div class="nav-container">
       <div class="nav-bar flex-css-row-sb">
         <div class="nav-left">
-          <a href="./index.html" class="roam-logo blue"></a>
+          <a href="./index.html" class="roam-logo">
+            <img src="./assets/image/new_logo-blue.png" alt="logo" />
+          </a>
         </div>
         <div class="nav-right">
           <a href="#" class="nav-lang">
             <img src="./assets/image/lang-icon-dark.png" alt="lang" />
             English
           </a>
-          <a href="#">goRoam</a>
+          <a href="#">Explore</a>
           <a href="#">About Us</a>
           <a href="#">Log In</a>
+        </div>
+        <div class="nav-tab flex-css-column" data-value="open">
+          <span></span>
+          <span></span>
         </div>
       </div>
     </div>
@@ -205,12 +230,14 @@
     </div>
 
     <!-- book button  -->
-    <div class="book-wrapper flex-css">
-      <h1>Book rooms with Roam</h1>
+    <div class="book-banner" id="bookBanner">
+      <div class="book-wrapper flex-css">
+        <h1>Book rooms with Roam</h1>
+      </div>
     </div>
 
     <!-- footer container  -->
-    <div class="footer-container">
+    <div class="footer-container" id="footerContainer">
       <div class="row">
         <div class="col-lg-3 col-sm-6 footer-box">
           <div class="footer-logo">
@@ -256,6 +283,7 @@
         <p>&#169; 2022 Roam Nepal, Inc. All rights reserved</p>
       </div>
     </div>
+
     <script src="./assets/js/go_roam_main.js"></script>
   </body>
 </html>
