@@ -311,6 +311,10 @@ body {
   color: #000000;
 }
 
+.footer-container .footer-logo img {
+  height: 20px;
+}
+
 .combo-footer {
   position: fixed;
   width: 100%;
@@ -364,7 +368,7 @@ body.dark-body .party-card-container .card-box .details-container .desc a {
   color: #ff5a10;
 }
 
-.footer-container {
+body.dark-body .footer-container {
   background-color: #252525;
 }
 
@@ -397,6 +401,14 @@ body.dark-body .mobile-nav {
 
 body.dark-body .mobile-nav .mobile-links a {
   color: #ffffff;
+}
+
+body.dark-body .roam-logo img {
+  height: 40px;
+}
+
+body.dark-body .footer-container .footer-logo img {
+  height: 40px;
 }
 
 /* responsive  */
