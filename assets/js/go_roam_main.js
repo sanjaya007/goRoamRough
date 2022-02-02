@@ -47,6 +47,18 @@ $("#goRoamBody").on("click", function (e) {
   }
 });
 
+$(".party-tab").on("click", function (e) {
+  e.preventDefault();
+  $(".party-tab").removeClass("active");
+  $(this).addClass("active");
+
+  const tabId = $(this).attr("id");
+  console.log(tabId);
+
+  $(".party-card-container").fadeOut();
+  $(`#${tabId}Container`).fadeIn("slow");
+});
+
 $(window).scroll(function () {
   var bookRect = document.getElementById("bookBanner").getBoundingClientRect();
   if ($(this).scrollTop() > 20) {
@@ -54,6 +66,4 @@ $(window).scroll(function () {
   } else {
     $(".book-wrapper").removeClass("fixed-banner");
   }
-  console.log(bookRect);
-  console.log(document.getElementById("bookBanner").offsetTop);
 });
