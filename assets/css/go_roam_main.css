@@ -96,7 +96,7 @@ body {
 }
 
 .banner-container {
-  padding: 90px 100px !important;
+  padding: 100px 100px !important;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -249,12 +249,44 @@ body {
 }
 
 .party-card-container .card-box .details-container .desc p {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 15px !important;
 }
 
 .party-card-container .card-box .details-container .desc a {
   font-size: 14px;
+}
+
+.party-card-container
+  .card-box
+  .details-container
+  .desc
+  .upcoming-date-text
+  .left-text
+  p {
+  margin: 0 !important;
+}
+
+.party-card-container
+  .card-box
+  .details-container
+  .desc
+  .upcoming-date-text
+  .right-text
+  p {
+  margin: 0 !important;
+}
+
+.party-card-container
+  .card-box
+  .details-container
+  .desc
+  .upcoming-date-text
+  .right-text
+  span {
+  color: #959595;
+  font-size: 10px;
+  line-height: 1;
 }
 
 .book-wrapper {
@@ -384,9 +416,9 @@ body.dark-body .footer-container .copyright-banner p {
   color: #ff5a10;
 }
 
-body.dark-body .banner-container {
-  background-image: url(../image/bg3.jpg);
-  background-position: center;
+body.dark-body .background-wrapper {
+  background-image: url(../image/cover2.png);
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -408,6 +440,10 @@ body.dark-body .roam-logo img {
 }
 
 body.dark-body .footer-container .footer-logo img {
+  height: 40px;
+}
+
+body.dark-body .mobile-nav .mobile-logo img {
   height: 40px;
 }
 
@@ -438,11 +474,28 @@ body.dark-body .footer-container .footer-logo img {
   .footer-container {
     padding: 90px 50px 60px 50px !important;
   }
+  .party-card-container
+    .card-box
+    .details-container
+    .desc
+    .upcoming-date-text
+    .left-text {
+    margin-right: 2rem !important;
+  }
 }
 
 @media (max-width: 991px) {
   .footer-container .footer-box {
     margin-bottom: 30px !important;
+  }
+
+  .party-card-container
+    .card-box
+    .details-container
+    .desc
+    .upcoming-date-text
+    .left-text {
+    margin-right: 1rem !important;
   }
 }
 
@@ -469,6 +522,17 @@ body.dark-body .footer-container .footer-logo img {
   }
   .banner-container .banner-box {
     padding: 30px 0 !important;
+  }
+  .party-card-container .card-box .details-container .desc .upcoming-date-text {
+    flex-direction: column-reverse;
+  }
+  .party-card-container
+    .card-box
+    .details-container
+    .desc
+    .upcoming-date-text
+    .right-text {
+    margin-bottom: 15px !important;
   }
   .footer-container {
     padding: 90px 20px 60px 20px !important;
@@ -525,6 +589,26 @@ body.dark-body .footer-container .footer-logo img {
   }
   .party-card-container .card-box .details-container .desc a {
     font-size: 12px;
+  }
+  .party-card-container .card-box .details-container .desc .upcoming-date-text {
+    justify-content: center;
+    align-items: center;
+  }
+  .party-card-container
+    .card-box
+    .details-container
+    .desc
+    .upcoming-date-text
+    .right-text {
+    text-align: center;
+  }
+  .party-card-container
+    .card-box
+    .details-container
+    .desc
+    .upcoming-date-text
+    .left-text {
+    text-align: center;
   }
   .footer-container .footer-box {
     display: flex;
