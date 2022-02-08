@@ -540,6 +540,12 @@ body.dark-body .mobile-nav .mobile-logo img {
 }
 
 @media (max-width: 575px) {
+  .nav-right {
+    display: none;
+  }
+  .nav-tab {
+    display: flex;
+  }
   .banner-container {
     padding: 30px 20px !important;
   }
@@ -564,12 +570,6 @@ body.dark-body .mobile-nav .mobile-logo img {
   }
   .party-card-container .card-box .details-container .heading-name p {
     text-align: center;
-  }
-  .nav-right {
-    display: none;
-  }
-  .nav-tab {
-    display: flex;
   }
   .party-card-container .card-box {
     padding: 1rem !important;
