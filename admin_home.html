@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sanjaya007/flex-library@master/dist/css/sanjaya.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/admin.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="adminRoamBody" class="admin-roam-body">
+    <!-- nav container -->
+    <div class="nav-container">
+      <div class="nav-bar flex-css-row-sb">
+        <div class="nav-left">
+          <a href="./index.html" class="roam-logo">
+            <img src="./assets/image/white_logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="nav-right">
+          <a href="#" class="nav-lang">
+            <img src="./assets/image/lang-icon-white.png" alt="lang" />
+            English
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-form-container flex-css py-5">
+      <div class="box">
+        <div class="heading-text flex-css-column mb-4">
+          <h1 class="text-center mb-2">Admin Login</h1>
+          <p class="text-center">Login with your email and password</p>
+        </div>
+        <div class="input-box pt-2">
+          <input type="text" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button>Login</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="copy-right-box flex-css">
+      <p>Copyright 2021, Go Roam</p>
+    </div>
+
+    <script src="./assets/js/admin.js"></script>
+  </body>
+</html>
