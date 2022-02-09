@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap");
 * {
   margin: 0 !important;
   padding: 0 !important;
@@ -124,6 +124,309 @@ body {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
+}
+
+.main-container .left-container .side-nav .list {
+  padding: 16px 20px 16px 30px !important;
+}
+
+.main-container .left-container .side-nav .list.active {
+  background-color: #3e3e47;
+  border-left: 5px solid #ff5a10;
+}
+
+.main-container .left-container .side-nav .list p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-left: 14px !important;
+}
+
+.main-container .right-container {
+  padding-left: 260px !important;
+  background-color: #f5faff;
+  min-height: 100vh;
+}
+
+.main-container .right-container .primary-container .nav-banner .title h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .nav-banner
+  .tools
+  .add-btn {
+  background-color: #006ce6;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 6px 20px !important;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .nav-banner
+  .tools
+  .profile
+  h1 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .nav-banner
+  .tools
+  .profile
+  .image-container {
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #dfe0eb;
+  padding: 2px !important;
+  margin-left: 15px !important;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .nav-banner
+  .tools
+  .profile
+  .image-container
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.main-container .right-container .primary-container .table-container {
+  background-color: #ffffff;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .table-container
+  .head-box
+  h1 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Mulish", sans-serif;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .table-container
+  .head-box
+  .icons-container
+  .icon
+  p {
+  color: #959595;
+  font-size: 12px;
+  margin-left: 10px !important;
+  font-weight: 600;
+}
+
+/* table  */
+.table td,
+.table th {
+  padding: 20px 10px !important;
+  font-size: 12px;
+  font-weight: normal;
+  color: #959595;
+}
+
+.table th {
+  font-weight: 600;
+}
+
+.table td.title-row {
+  color: #000000;
+  font-weight: 600;
+}
+
+.table td .image-container {
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: -10px !important;
+}
+
+.table td .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.table td .action-link {
+  color: #959595;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0 10px !important;
+  line-height: 0.5;
+}
+
+.table td .action-link:hover {
+  color: #006ce6;
+}
+
+tr {
+  border-top: 1px solid #dfe0eb;
+}
+
+thead tr {
+  border: none;
+}
+
+tr:hover {
+  background-color: #f6f6f6;
+}
+
+/* .modal  */
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100%;
+  z-index: 999999;
+}
+
+.modal-wrapper.hidden {
+  display: none;
+}
+
+.modal-wrapper .modal-box {
+  background-color: #ffffff;
+  padding: 20px !important;
+  border-radius: 14px;
+  max-width: 350px;
+}
+
+.modal-wrapper .modal-box .title h1 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modal-wrapper .modal-box .form-container .form-list input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: #fcfdfe;
+  border: 1px solid #e3e4e6;
+  border-radius: 50px;
+  padding: 8px 20px !important;
+  font-size: 12px;
+  margin-bottom: 10px !important;
+}
+
+.modal-wrapper .modal-box .form-container .form-list textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: #fcfdfe;
+  border: 1px solid #e3e4e6;
+  border-radius: 14px;
+  padding: 8px 20px !important;
+  font-size: 12px;
+  margin-bottom: 10px !important;
+}
+
+.modal-wrapper .modal-box .form-container .upload-list label {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.modal-wrapper .modal-box .form-container .upload-list .upload-box {
+  width: 100%;
+  background-color: #fcfdfe;
+  border: 1px solid #e3e4e6;
+  border-radius: 100px;
+  padding: 10px 20px !important;
+  margin-bottom: 10px !important;
+  position: relative;
+}
+
+.modal-wrapper .modal-box .form-container .upload-list .upload-box img {
+  height: 14px;
+  margin-right: 10px !important;
+}
+
+.modal-wrapper .modal-box .form-container .upload-list .upload-box p {
+  font-size: 12px;
+  color: #959595;
+}
+
+.modal-wrapper .modal-box .form-container .upload-list .upload-box input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.modal-wrapper .modal-box .form-container .btn-container button {
+  border: none;
+  outline: none;
+  background-color: #006ce6;
+  padding: 10px 20px !important;
+  font-size: 12px;
+  color: #ffffff;
+  width: 100%;
+  font-weight: 600;
+  border-radius: 100px;
+}
+
+.modal-wrapper.delete-modal-wrapper .modal-box {
+  min-width: 400px;
+  max-width: 400px;
+  padding: 30px !important;
+  border-radius: 10px;
+}
+
+.modal-wrapper.delete-modal-wrapper .modal-box .title h1 {
+  font-size: 18px;
+}
+
+.modal-wrapper.delete-modal-wrapper .modal-box .btn-container a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 20px !important;
+  border-radius: 10px;
+}
+
+.modal-wrapper.delete-modal-wrapper .modal-box .btn-container a.yes-btn {
+  background-color: #27ae60;
+}
+
+.modal-wrapper.delete-modal-wrapper .modal-box .btn-container a.no-btn {
+  background-color: #e74c3c;
+  margin-left: 30px !important;
 }
 
 @media (max-width: 1023px) {
