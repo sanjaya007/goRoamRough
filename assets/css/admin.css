@@ -142,6 +142,23 @@ body {
   padding-left: 14px !important;
 }
 
+.main-container .left-container .logout-box {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+
+.main-container .left-container .logout-box .list {
+  cursor: pointer;
+}
+
+.main-container .left-container .logout-box p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-left: 15px !important;
+}
+
 .main-container .right-container {
   padding-left: 260px !important;
   background-color: #f5faff;
@@ -301,6 +318,182 @@ thead tr {
 
 tr:hover {
   background-color: #f6f6f6;
+}
+
+.main-container .pagination-box {
+  border-top: 1px solid #dfe0eb;
+}
+
+.main-container .pagination-box .box p {
+  color: #959595;
+  font-size: 12px;
+  margin-right: 10px !important;
+}
+
+.main-container .pagination-box .box .icon-box img {
+  height: 12px;
+  margin: 0 10px !important;
+}
+
+.main-container .pagination-box .box p span.page-number {
+  color: #000000;
+  font-weight: 600;
+}
+
+.main-container .info-container {
+  background-color: #ffffff;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+  padding: 20px !important;
+}
+
+.main-container .info-container .left-info {
+  width: 40%;
+}
+
+.main-container .info-container .right-info {
+  width: 60%;
+}
+
+.main-container .info-container .left-info .image-container {
+  width: 100%;
+  height: 300px;
+  filter: drop-shadow(0px 8px 25px rgba(0, 0, 0, 0.2));
+  border-radius: 12px;
+}
+
+.main-container .info-container .left-info .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.main-container .info-container .left-info .list-box .list {
+  margin-bottom: 20px !important;
+}
+
+.main-container .info-container .left-info .list-box .list h1 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 10px !important;
+  line-height: 1.5;
+}
+
+.main-container .info-container .left-info .list-box .list p {
+  color: #959595;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.main-container .info-container .left-info .list-box .list p span {
+  color: #006ce6;
+  font-weight: 500;
+}
+
+.main-container .info-container .right-info .heading-text h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.main-container .info-container .right-info .heading-text img {
+  margin-right: 10px !important;
+  height: 12px;
+}
+
+.main-container .info-container .right-info .heading-text p {
+  font-size: 12px;
+  color: #959595;
+  font-weight: 500;
+}
+
+.main-container .info-container .right-info .heading-text h5 {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.main-container .info-container .right-info .event-box {
+  margin: 40px 0 !important;
+}
+
+.main-container .info-container .right-info .event-box .title {
+  padding-bottom: 14px !important;
+  border-bottom: 1px solid #dfe0eb;
+}
+
+.main-container .info-container .right-info .event-box .title h1 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #959595;
+  letter-spacing: 0.2em;
+}
+
+.main-container .info-container .right-info .event-box .list-box .list {
+  margin-bottom: 15px !important;
+}
+
+.main-container
+  .info-container
+  .right-info
+  .event-box
+  .list-box
+  .list:nth-last-child(1) {
+  margin-bottom: 0 !important;
+}
+
+.main-container .info-container .right-info .event-box .list-box .list h1 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 15px !important;
+}
+
+.main-container .info-container .right-info .event-box .list-box .list p {
+  font-size: 12px;
+}
+
+.main-container .info-container .right-info .desc-box {
+  margin: 40px 0 !important;
+}
+
+.main-container .info-container .right-info .desc-box .title {
+  padding-bottom: 14px !important;
+  border-bottom: 1px solid #dfe0eb;
+}
+
+.main-container .info-container .right-info .desc-box .title h1 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #959595;
+  letter-spacing: 0.2em;
+}
+
+.main-container .info-container .right-info .desc-box .summary-text p {
+  font-size: 14px;
+  color: #959595;
+}
+
+.main-container .info-container .btn-container {
+  border-top: 1px solid #dfe0eb;
+}
+
+.main-container .info-container .btn-container a {
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 100px;
+  padding: 6px 20px !important;
+  text-decoration: none;
+}
+
+.main-container .info-container .btn-container a.edit-link {
+  background-color: #006ce6;
+  color: #ffffff;
+}
+
+.main-container .info-container .btn-container a.delete-link {
+  background-color: #ffffff;
+  border: 1px solid #006ce6;
+  color: #006ce6;
+  margin-left: 10px !important;
 }
 
 /* .modal  */

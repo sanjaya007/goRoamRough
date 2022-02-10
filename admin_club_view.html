@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sanjaya007/flex-library@master/dist/css/sanjaya.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/admin.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="adminRoamBody" class="admin-roam-body">
+    <div class="main-container">
+      <div class="left-container">
+        <div class="heading-text py-5">
+          <h1>Admin Panel</h1>
+        </div>
+        <div class="side-nav">
+          <div class="list flex-css-row-start active">
+            <img src="./assets/image/clubs.png" alt="clubs" />
+            <p>Clubs</p>
+          </div>
+        </div>
+        <div class="logout-box flex-css">
+          <div class="list flex-css-row">
+            <img src="./assets/image/logout.png" alt="logout" />
+            <p>Log out</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="primary-container p-4">
+          <div class="nav-banner flex-css-row-sb mb-4">
+            <div class="title">
+              <h1>Details</h1>
+            </div>
+            <div class="tools flex-css-row">
+              <div class="add-link mx-4">
+                <a href="#" class="add-btn" id="addClubBtn">Add Club</a>
+              </div>
+              <div class="profile flex-css-row">
+                <h1>Anish Pokharel</h1>
+                <div class="image-container">
+                  <img src="./assets/image/man.png" alt="profile" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-container">
+            <div class="info-wrapper flex-top-row">
+              <div class="left-info">
+                <div class="image-container flex-css-row-start mb-3">
+                  <img src="./assets/image/club1.png" alt="club" />
+                </div>
+                <div class="list-box">
+                  <div class="list flex-top-row-start">
+                    <h1>Full&nbsp;Location:</h1>
+                    <p>
+                      Thamel, Bhagwatisthan, Kathmandu, Behind A-One Complex,
+                      Kathmandu, Bāgmatī 44600
+                    </p>
+                  </div>
+                  <div class="list flex-top-row-start">
+                    <h1>Longitude/Latitude:</h1>
+                    <p>27.71718, 85.31219 <span>(Goto Map)</span></p>
+                  </div>
+                  <div class="list flex-top-row-start">
+                    <h1>Book/RSVP:</h1>
+                    <p>01124202316</p>
+                  </div>
+                  <div class="list flex-top-row-start">
+                    <h1>Slot No:</h1>
+                    <p>A4</p>
+                  </div>
+                </div>
+              </div>
+              <div class="right-info pl-4">
+                <div class="heading-text">
+                  <h1>L.O.D - Lord of Drinks Nepal</h1>
+                  <div class="address-text flex-css-row-start my-1">
+                    <img src="./assets/image/location.png" alt="location" />
+                    <p>Thamel, Kathmandu</p>
+                  </div>
+                  <h5>Monday Night</h5>
+                </div>
+                <div class="event-box">
+                  <div class="title">
+                    <h1>Event Details</h1>
+                  </div>
+                  <div class="list-box pt-3">
+                    <div class="list flex-css-row-start">
+                      <h1>Resident DJ:</h1>
+                      <p>Hamza Redmus Suren Anish NADZ Mani.</p>
+                    </div>
+                    <div class="list flex-top-row-start">
+                      <h1>Event Date:</h1>
+                      <p>2022/04/14 ( Thursday )</p>
+                    </div>
+                    <div class="list flex-top-row-start">
+                      <h1>Event Time:</h1>
+                      <p>7PM onwards</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc-box">
+                  <div class="title">
+                    <h1>Description</h1>
+                  </div>
+                  <div class="summary-text pt-3">
+                    <p>
+                      Escape the ordinary nightlife & join the party at L.O.D.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum. <br />
+                      <br />
+
+                      Escape the ordinary nightlife & join the party at L.O.D.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. <br />
+                      <br />
+
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                      irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia
+                      deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-container flex-css-row-end pt-4">
+              <a href="#" class="edit-link">Edit Club</a>
+              <a href="#" class="delete-link">Delete Club</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pop up modal  -->
+    <div class="modal-wrapper flex-css hidden" id="addModal">
+      <div class="modal-box">
+        <div class="title mb-4">
+          <h1>Add a club</h1>
+        </div>
+        <div class="form-container">
+          <div class="form-list">
+            <input type="text" placeholder="Title" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Sub Title" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Event Date" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Event Time" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Location" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Longitude/ Latitude" />
+          </div>
+          <div class="form-list flex-css-row">
+            <input type="text" class="mr-1" placeholder="Slot No" />
+            <input type="text" class="ml-1" placeholder="RSVP No" />
+          </div>
+          <div class="form-list">
+            <textarea rows="5" placeholder="Description"></textarea>
+          </div>
+          <div class="upload-list">
+            <label for="upload">Add logo of your Company</label>
+            <div class="upload-box flex-css-row mt-2">
+              <img src="./assets/image/gallery.png" alt="upload" />
+              <p>Upload a Logo</p>
+              <input type="file" />
+            </div>
+          </div>
+          <div class="btn-container pt-2">
+            <button>Add a club</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-wrapper flex-css hidden" id="editModal">
+      <div class="modal-box">
+        <div class="title mb-4">
+          <h1>Edit a club</h1>
+        </div>
+        <div class="form-container">
+          <div class="form-list">
+            <input type="text" placeholder="Title" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Sub Title" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Event Date" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Event Time" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Location" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Longitude/ Latitude" />
+          </div>
+          <div class="form-list flex-css-row">
+            <input type="text" class="mr-1" placeholder="Slot No" />
+            <input type="text" class="ml-1" placeholder="RSVP No" />
+          </div>
+          <div class="form-list">
+            <textarea rows="5" placeholder="Description"></textarea>
+          </div>
+          <div class="upload-list">
+            <label for="upload">Add logo of your Company</label>
+            <div class="upload-box flex-css-row mt-2">
+              <img src="./assets/image/gallery.png" alt="upload" />
+              <p>Upload a Logo</p>
+              <input type="file" />
+            </div>
+          </div>
+          <div class="btn-container pt-2">
+            <button>Edit a club</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal-wrapper delete-modal-wrapper flex-css hidden"
+      id="deleteModal"
+    >
+      <div class="modal-box">
+        <div class="title mb-4">
+          <h1>Are you sure you want to delete?</h1>
+        </div>
+        <div class="btn-container flex-css-row-end pt-2">
+          <a href="#" class="yes-btn">Yes</a>
+          <a href="#" class="no-btn">No</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/admin.js"></script>
+  </body>
+</html>
