@@ -117,6 +117,11 @@ body {
   left: 0;
   background-color: #363740;
   height: 100vh;
+  z-index: 999999;
+}
+
+.main-container .left-container .heading-text {
+  pointer-events: none;
 }
 
 .main-container .left-container .heading-text h1 {
@@ -124,6 +129,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
+  pointer-events: none;
 }
 
 .main-container .left-container .side-nav .list {
@@ -135,11 +141,16 @@ body {
   border-left: 5px solid #ff5a10;
 }
 
+.main-container .left-container .side-nav .list img {
+  pointer-events: none;
+}
+
 .main-container .left-container .side-nav .list p {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
   padding-left: 14px !important;
+  pointer-events: none;
 }
 
 .main-container .left-container .logout-box {
@@ -152,11 +163,16 @@ body {
   cursor: pointer;
 }
 
+.main-container .left-container .logout-box img {
+  pointer-events: none;
+}
+
 .main-container .left-container .logout-box p {
   font-size: 16px;
   color: #ffffff;
   font-weight: 600;
   margin-left: 15px !important;
+  pointer-events: none;
 }
 
 .main-container .right-container {
@@ -263,10 +279,11 @@ body {
 /* table  */
 .table td,
 .table th {
-  padding: 20px 10px !important;
+  padding: 20px 20px !important;
   font-size: 12px;
   font-weight: normal;
   color: #959595;
+  white-space: nowrap;
 }
 
 .table th {
@@ -622,6 +639,42 @@ tr:hover {
   margin-left: 30px !important;
 }
 
+/* mobile nav tab  */
+.nav-tab {
+  cursor: pointer;
+  display: none;
+}
+
+.nav-tab .box {
+  background-color: #ececec;
+  border-radius: 10px;
+  padding: 10px !important;
+}
+
+.nav-tab span {
+  width: 28px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #006ce6;
+  margin: 5px 0 !important;
+  pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+  .main-container .info-container .left-info .list-box .list {
+    flex-direction: column;
+  }
+  .main-container .left-container {
+    left: -100%;
+  }
+  .main-container .right-container {
+    padding-left: 0 !important;
+  }
+  .nav-tab {
+    display: flex;
+  }
+}
+
 @media (max-width: 1023px) {
   .nav-bar {
     padding: 30px 50px !important;
@@ -636,12 +689,70 @@ tr:hover {
   .nav-bar {
     padding: 30px 20px !important;
   }
+  .nav-banner {
+    flex-direction: column;
+  }
+  .main-container .right-container .primary-container .nav-banner .title {
+    margin-bottom: 20px !important;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .nav-banner
+    .tools
+    .add-link {
+    margin-left: 0 !important;
+  }
   .home-form-container {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
   .home-form-container .box {
     padding: 30px 20px !important;
+  }
+  .main-container .info-container .left-info .list-box .list {
+    flex-direction: row;
+  }
+  .main-container .info-container .info-wrapper {
+    flex-direction: column;
+  }
+  .main-container .info-container .left-info {
+    width: 100%;
+    margin-bottom: 20px !important;
+  }
+  .main-container .info-container .right-info {
+    width: 100%;
+    padding: 0 !important;
+  }
+  .main-container .primary-container {
+    padding: 1rem !important;
+  }
+  .main-container .info-container .left-info .image-container {
+    height: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-container .info-container .left-info .list-box .list {
+    flex-direction: column;
+  }
+  .main-container .info-container {
+    padding: 10px !important;
+  }
+  .main-container .info-container .right-info .heading-text h1 {
+    font-size: 22px;
+  }
+  .main-container .info-container .right-info .event-box .list-box .list h1 {
+    font-size: 12px;
+  }
+  .main-container .info-container .right-info .desc-box .summary-text p {
+    font-size: 12px;
+  }
+  .main-container .info-container .left-info .list-box .list h1 {
+    font-size: 12px;
+  }
+  .main-container .info-container .left-info .list-box .list p {
+    font-size: 12px;
   }
 }
 
@@ -650,6 +761,49 @@ tr:hover {
     padding: 30px 10px !important;
   }
   .home-form-container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .table-container
+    .head-box
+    h1 {
+    font-size: 16px;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .table-container
+    .head-box
+    .icons-container
+    .icon
+    p {
+    margin-left: 6px !important;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .table-container
+    .head-box
+    .icons-container
+    .icon:nth-child(2) {
+    margin-left: 10px !important;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .table-container
+    .head-box {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .table td,
+  .table th {
+    padding: 20px 10px !important;
+  }
+  .main-container .pagination-box {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }

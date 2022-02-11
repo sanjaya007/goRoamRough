@@ -23,3 +23,27 @@ $(".modal-wrapper").on("click", function (e) {
     $(".modal-wrapper").addClass("hidden");
   }
 });
+
+$(".nav-tab").on("click", function () {
+  $(".left-container").animate({
+    left: "0px",
+    opacity: "1",
+  });
+});
+
+$("#adminRoamBody").on("click", function (e) {
+  const targetEl = e.target;
+  const className = $(targetEl).attr("class")?.split(" ")[0];
+  console.log(className);
+  if (
+    className !== "left-container" &&
+    className !== "box" &&
+    className !== "list" &&
+    className !== "logout-box"
+  ) {
+    $(".left-container").animate({
+      left: "-100%",
+      opacity: "0",
+    });
+  }
+});
