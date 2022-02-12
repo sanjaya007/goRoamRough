@@ -2,10 +2,31 @@ $(".filter-btn").on("click", function () {
   $("#filterList").slideToggle();
 });
 
+$(".filter-location-list").on("click", function () {
+  $(".filter-location-list").removeClass("active");
+  $(".filter-location-list").attr("data-status", "inactive");
+
+  $(this).addClass("active");
+  $(this).attr("data-status", "active");
+});
+
+$(".filter-price-list").on("click", function () {
+  $(".filter-price-list").removeClass("active");
+  $(".filter-price-list").attr("data-status", "inactive");
+
+  $(this).addClass("active");
+  $(this).attr("data-status", "active");
+});
+
 $("#goRoamBody").on("click", function (e) {
   const targetEl = e.target;
-  const className = $(targetEl).attr("class");
-  if (className !== "filter-btn") {
+  const className = $(targetEl).attr("class").split(" ")[0];
+  if (
+    className !== "filter-btn" &&
+    className !== "filter-link" &&
+    className !== "filter-cat" &&
+    className !== "list"
+  ) {
     $("#filterList").slideUp();
   }
 });
