@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sanjaya007/flex-library@master/dist/css/sanjaya.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/admin.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="adminRoamBody" class="admin-roam-body">
+    <div class="main-container">
+      <div class="left-container">
+        <div class="heading-text py-5">
+          <h1>Admin Panel</h1>
+        </div>
+        <div class="side-nav">
+          <div class="list flex-css-row-start active">
+            <img src="./assets/image/clubs.png" alt="clubs" />
+            <p>Clubs</p>
+          </div>
+        </div>
+        <div class="logout-box flex-css">
+          <div class="list flex-css-row">
+            <img src="./assets/image/logout.png" alt="logout" />
+            <p>Log out</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="primary-container p-4">
+          <!-- mobile  -->
+          <div class="nav-tab flex-css-row-start mb-4">
+            <div class="box flex-css-column">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- nav container  -->
+          <div class="nav-banner flex-css-row-sb mb-4">
+            <div class="title">
+              <h1>Club Details</h1>
+            </div>
+            <div class="tools flex-css-row">
+              <div class="add-link mx-4">
+                <a href="#" class="add-btn" id="addClubBtn">Add Club</a>
+              </div>
+              <div class="profile flex-css-row">
+                <h1>Anish Pokharel</h1>
+                <div class="image-container">
+                  <img src="./assets/image/man.png" alt="profile" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table-container">
+            <div class="head-box flex-css-row-sb p-4">
+              <div class="title">
+                <h1>List of Clubs</h1>
+              </div>
+              <div class="icons-container flex-css-row">
+                <div class="icon flex-css-row">
+                  <img src="./assets/image/sort.png" alt="icon" />
+                  <p>Sort</p>
+                </div>
+                <div class="icon flex-css-row ml-4">
+                  <img src="./assets/image/filter.png" alt="icon" />
+                  <p>Filter</p>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Sub-title</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="title-row">01</td>
+                    <td>
+                      <div class="image-container">
+                        <img src="./assets/image/man.png" alt="profile" />
+                      </div>
+                    </td>
+                    <td class="title-row">Title name</td>
+                    <td>Subtitle Text</td>
+                    <td>
+                      <div class="action-container">
+                        <a href="#" class="action-link edit-link" id="editLink"
+                          >Edit</a
+                        >
+                        |
+                        <a
+                          href="#"
+                          class="action-link delete-link"
+                          id="deleteLink"
+                          >Delete</a
+                        >
+                        |
+                        <a href="#" class="action-link view-link" id="viewLink"
+                          >View</a
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="title-row">02</td>
+                    <td>
+                      <div class="image-container">
+                        <img src="./assets/image/man.png" alt="profile" />
+                      </div>
+                    </td>
+                    <td class="title-row">Title name</td>
+                    <td>Subtitle Text</td>
+                    <td>
+                      <div class="action-container">
+                        <a href="#" class="action-link edit-link" id="editLink"
+                          >Edit</a
+                        >
+                        |
+                        <a
+                          href="#"
+                          class="action-link delete-link"
+                          id="deleteLink"
+                          >Delete</a
+                        >
+                        |
+                        <a href="#" class="action-link view-link" id="viewLink"
+                          >View</a
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="title-row">03</td>
+                    <td>
+                      <div class="image-container">
+                        <img src="./assets/image/man.png" alt="profile" />
+                      </div>
+                    </td>
+                    <td class="title-row">Title name</td>
+                    <td>Subtitle Text</td>
+                    <td>
+                      <div class="action-container">
+                        <a href="#" class="action-link edit-link" id="editLink"
+                          >Edit</a
+                        >
+                        |
+                        <a
+                          href="#"
+                          class="action-link delete-link"
+                          id="deleteLink"
+                          >Delete</a
+                        >
+                        |
+                        <a href="#" class="action-link view-link" id="viewLink"
+                          >View</a
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="title-row">04</td>
+                    <td>
+                      <div class="image-container">
+                        <img src="./assets/image/man.png" alt="profile" />
+                      </div>
+                    </td>
+                    <td class="title-row">Title name</td>
+                    <td>Subtitle Text</td>
+                    <td>
+                      <div class="action-container">
+                        <a href="#" class="action-link edit-link" id="editLink"
+                          >Edit</a
+                        >
+                        |
+                        <a
+                          href="#"
+                          class="action-link delete-link"
+                          id="deleteLink"
+                          >Delete</a
+                        >
+                        |
+                        <a href="#" class="action-link view-link" id="viewLink"
+                          >View</a
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="title-row">05</td>
+                    <td>
+                      <div class="image-container">
+                        <img src="./assets/image/man.png" alt="profile" />
+                      </div>
+                    </td>
+                    <td class="title-row">Title name</td>
+                    <td>Subtitle Text</td>
+                    <td>
+                      <div class="action-container">
+                        <a href="#" class="action-link edit-link" id="editLink"
+                          >Edit</a
+                        >
+                        |
+                        <a
+                          href="#"
+                          class="action-link delete-link"
+                          id="deleteLink"
+                          >Delete</a
+                        >
+                        |
+                        <a href="#" class="action-link view-link" id="viewLink"
+                          >View</a
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="title-row">06</td>
+                    <td>
+                      <div class="image-container">
+                        <img src="./assets/image/man.png" alt="profile" />
+                      </div>
+                    </td>
+                    <td class="title-row">Title name</td>
+                    <td>Subtitle Text</td>
+                    <td>
+                      <div class="action-container">
+                        <a href="#" class="action-link edit-link" id="editLink"
+                          >Edit</a
+                        >
+                        |
+                        <a
+                          href="#"
+                          class="action-link delete-link"
+                          id="deleteLink"
+                          >Delete</a
+                        >
+                        |
+                        <a href="#" class="action-link view-link" id="viewLink"
+                          >View</a
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="title-row">07</td>
+                    <td>
+                      <div class="image-container">
+                        <img src="./assets/image/man.png" alt="profile" />
+                      </div>
+                    </td>
+                    <td class="title-row">Title name</td>
+                    <td>Subtitle Text</td>
+                    <td>
+                      <div class="action-container">
+                        <a href="#" class="action-link edit-link" id="editLink"
+                          >Edit</a
+                        >
+                        |
+                        <a
+                          href="#"
+                          class="action-link delete-link"
+                          id="deleteLink"
+                          >Delete</a
+                        >
+                        |
+                        <a href="#" class="action-link view-link" id="viewLink"
+                          >View</a
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="pagination-box flex-css-row-end py-4 px-4">
+              <div class="box flex-css-row">
+                <div class="text-box flex-css-row">
+                  <p>Row per page: <span class="page-number mr-4"> 7 </span></p>
+                  <p><span>1</span> - <span>7</span> of <span>05</span></p>
+                </div>
+                <div class="icon-box">
+                  <a href="#">
+                    <img src="./assets/image/left_arrow.png" alt="arrow" />
+                  </a>
+                  <a href="#">
+                    <img src="./assets/image/right_arrow.png" alt="arrow" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pop up modal  -->
+    <div class="modal-wrapper flex-css hidden" id="addModal">
+      <div class="modal-box">
+        <div class="title mb-4">
+          <h1>Add a club</h1>
+        </div>
+        <div class="form-container">
+          <div class="form-list">
+            <input type="text" placeholder="Title" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Sub Title" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Event Date" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Event Time" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Location" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Longitude/ Latitude" />
+          </div>
+          <div class="form-list flex-css-row">
+            <input type="text" class="mr-1" placeholder="Slot No" />
+            <input type="text" class="ml-1" placeholder="RSVP No" />
+          </div>
+          <div class="form-list">
+            <textarea rows="5" placeholder="Description"></textarea>
+          </div>
+          <div class="upload-list">
+            <label for="upload">Add logo of your Company</label>
+            <div class="upload-box flex-css-row mt-2">
+              <img src="./assets/image/gallery.png" alt="upload" />
+              <p>Upload a Logo</p>
+              <input type="file" />
+            </div>
+          </div>
+          <div class="btn-container pt-2">
+            <button>Add a club</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-wrapper flex-css hidden" id="editModal">
+      <div class="modal-box">
+        <div class="title mb-4">
+          <h1>Edit a club</h1>
+        </div>
+        <div class="form-container">
+          <div class="form-list">
+            <input type="text" placeholder="Title" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Sub Title" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Event Date" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Event Time" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Location" />
+          </div>
+          <div class="form-list">
+            <input type="text" placeholder="Longitude/ Latitude" />
+          </div>
+          <div class="form-list flex-css-row">
+            <input type="text" class="mr-1" placeholder="Slot No" />
+            <input type="text" class="ml-1" placeholder="RSVP No" />
+          </div>
+          <div class="form-list">
+            <textarea rows="5" placeholder="Description"></textarea>
+          </div>
+          <div class="upload-list">
+            <label for="upload">Add logo of your Company</label>
+            <div class="upload-box flex-css-row mt-2">
+              <img src="./assets/image/gallery.png" alt="upload" />
+              <p>Upload a Logo</p>
+              <input type="file" />
+            </div>
+          </div>
+          <div class="btn-container pt-2">
+            <button>Edit a club</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal-wrapper delete-modal-wrapper flex-css hidden"
+      id="deleteModal"
+    >
+      <div class="modal-box">
+        <div class="title mb-4">
+          <h1>Are you sure you want to delete?</h1>
+        </div>
+        <div class="btn-container flex-css-row-end pt-2">
+          <a href="#" class="yes-btn">Yes</a>
+          <a href="#" class="no-btn">No</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/admin.js"></script>
+  </body>
+</html>

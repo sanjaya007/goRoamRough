@@ -660,6 +660,83 @@ tr:hover {
   pointer-events: none;
 }
 
+/* graph container  */
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .card-container
+  .card-box {
+  background-color: #ffffff;
+  padding: 20px !important;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 200px;
+  margin-bottom: 20px !important;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .card-container
+  .card-box.active {
+  border: 1px solid #006ce6;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .card-container
+  .card-box
+  .info-box
+  p {
+  font-size: 12px;
+  color: #959595;
+  text-align: center;
+  margin-bottom: 12px !important;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .card-container
+  .card-box
+  .info-box
+  h1 {
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .card-container
+  .card-box.active
+  .info-box
+  p {
+  font-size: 14px;
+  color: #006ce6;
+  font-weight: 600;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .card-container
+  .card-box.active
+  .info-box
+  h1 {
+  font-size: 26px;
+  color: #006ce6;
+}
+
 @media (max-width: 1200px) {
   .main-container .info-container .left-info .list-box .list {
     flex-direction: column;
@@ -682,6 +759,17 @@ tr:hover {
   .home-form-container {
     padding-left: 50px !important;
     padding-right: 50px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .card-container
+    .card-box {
+    width: 48%;
   }
 }
 
@@ -753,6 +841,14 @@ tr:hover {
   }
   .main-container .info-container .left-info .list-box .list p {
     font-size: 12px;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .card-container
+    .card-box {
+    width: 100%;
   }
 }
 

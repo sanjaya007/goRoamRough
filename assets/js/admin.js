@@ -47,3 +47,9 @@ $("#adminRoamBody").on("click", function (e) {
     });
   }
 });
+
+// graph container
+$(".card-box").on("click", function () {
+  $(".card-box").removeClass("active");
+  $(this).addClass("active");
+});
