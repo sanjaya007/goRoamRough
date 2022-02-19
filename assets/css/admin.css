@@ -643,6 +643,7 @@ tr:hover {
 .nav-tab {
   cursor: pointer;
   display: none;
+  width: fit-content;
 }
 
 .nav-tab .box {
@@ -673,7 +674,7 @@ tr:hover {
   border-radius: 8px;
   cursor: pointer;
   width: 200px;
-  margin-bottom: 20px !important;
+  margin-bottom: 40px !important;
 }
 
 .main-container
@@ -737,6 +738,319 @@ tr:hover {
   color: #006ce6;
 }
 
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container {
+  background-color: #ffffff;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .left-chart {
+  border-right: 1px solid #dfe0eb;
+  min-width: 350px;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .right-chart {
+  width: 100%;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .left-chart
+  .info-box {
+  padding: 30px !important;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .left-chart
+  .info-box
+  .title
+  h1 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .left-chart
+  .info-box
+  .title
+  p {
+  font-size: 12px;
+  color: #b9b9b9;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .left-chart
+  .info-box
+  .list-box {
+  max-height: 485px;
+  overflow-y: auto;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .left-chart
+  .info-box
+  .list-box
+  .list {
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .left-chart
+  .info-box
+  .list-box
+  .list
+  .list-title
+  h1 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px !important;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .left-chart
+  .info-box
+  .list-box
+  .list
+  .list-title
+  p {
+  font-size: 12px;
+  color: #b9b9b9;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .left-chart
+  .info-box
+  .list-box
+  .list
+  .list-count
+  h5 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 6px !important;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .left-chart
+  .info-box
+  .list-box
+  .list
+  .list-count
+  p {
+  background-color: rgba(0, 108, 230, 0.1);
+  border-radius: 3px;
+  font-size: 10px;
+  color: #006ce6;
+  padding: 2px 6px !important;
+  font-weight: 500;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .left-chart
+  .info-box
+  .list-box
+  .list
+  .list-count
+  p.increment-text {
+  background: rgba(75, 222, 151, 0.1);
+  color: #4bde97;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .left-chart
+  .info-box
+  .list-box
+  .list
+  .list-count
+  p.decrement-text {
+  background: rgba(255, 16, 16, 0.1);
+  color: #ff1010;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .right-chart
+  .chart-box {
+  padding: 30px !important;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .right-chart
+  .chart-box
+  .header-text
+  .title
+  h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .right-chart
+  .chart-box
+  .header-text
+  .title
+  p {
+  color: #171717;
+  font-size: 14px;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .right-chart
+  .chart-box
+  .header-text
+  .status
+  .list
+  .dot {
+  min-width: 8px;
+  min-height: 8px;
+  max-width: 8px;
+  max-height: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px !important;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .right-chart
+  .chart-box
+  .header-text
+  .status
+  .list
+  .dot.blue-dot {
+  background-color: #5f2eea;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .right-chart
+  .chart-box
+  .header-text
+  .status
+  .list
+  .dot.green-dot {
+  background-color: #4bde97;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .right-chart
+  .chart-box
+  .header-text
+  .status
+  .list
+  .info
+  p {
+  text-transform: uppercase;
+  color: #b9b9b9;
+  font-size: 10px;
+  line-height: 1;
+  margin-bottom: 4px !important;
+}
+
+.main-container
+  .right-container
+  .primary-container
+  .graph-container
+  .chart-container
+  .right-chart
+  .chart-box
+  .header-text
+  .status
+  .list
+  .info
+  h1 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* chart  */
+.my-chart {
+  max-width: 100%;
+}
+
 @media (max-width: 1200px) {
   .main-container .info-container .left-info .list-box .list {
     flex-direction: column;
@@ -759,6 +1073,22 @@ tr:hover {
   .home-form-container {
     padding-left: 50px !important;
     padding-right: 50px !important;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container {
+    flex-direction: column;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .left-chart {
+    min-width: 100%;
+    border: none;
   }
 }
 
@@ -818,6 +1148,69 @@ tr:hover {
   .main-container .info-container .left-info .image-container {
     height: auto;
   }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .right-chart
+    .chart-box
+    .header-text {
+    flex-direction: column;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .right-chart
+    .chart-box
+    .header-text
+    .title {
+    margin-bottom: 20px !important;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .right-chart
+    .chart-box
+    .header-text
+    .title
+    h1 {
+    text-align: center;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .right-chart
+    .chart-box
+    .header-text
+    .title
+    p {
+    text-align: center;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .left-chart
+    .info-box {
+    padding: 20px !important;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .right-chart
+    .chart-box {
+    padding: 20px !important;
+  }
 }
 
 @media (max-width: 450px) {
@@ -849,6 +1242,85 @@ tr:hover {
     .card-container
     .card-box {
     width: 100%;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .right-chart
+    .chart-box
+    .header-text
+    .status {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .right-chart
+    .chart-box
+    .header-text
+    .status
+    .list {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .right-chart
+    .chart-box
+    .header-text
+    .status
+    .list:nth-child(1) {
+    margin-bottom: 20px !important;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .left-chart
+    .info-box {
+    padding: 10px !important;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .right-chart
+    .chart-box {
+    padding: 10px !important;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .right-chart
+    .chart-box
+    .header-text
+    .title
+    h1 {
+    font-size: 18px;
+  }
+  .main-container
+    .right-container
+    .primary-container
+    .graph-container
+    .chart-container
+    .right-chart
+    .chart-box
+    .header-text
+    .title
+    p {
+    font-size: 12px;
   }
 }
 
