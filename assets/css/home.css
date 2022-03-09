@@ -24,14 +24,6 @@ body {
   -o-transition: all 0.3s;
 }
 
-.nav-bar.no-padding {
-  padding: 0 !important;
-}
-
-.nav-bar.reset-nav {
-  flex-direction: row;
-}
-
 .roam-logo img {
   height: 20px;
 }
@@ -57,25 +49,15 @@ body {
 .nav-tab {
   display: none;
   cursor: pointer;
-  width: 28px;
-}
-
-.nav-tab.dark {
-  background-color: #252525;
 }
 
 .nav-tab span {
-  display: block;
-  width: 100%;
+  width: 28px;
   height: 3px;
   border-radius: 10px;
   background-color: #565656;
-  margin: 3px 0 !important;
+  margin: 5px 0 !important;
   pointer-events: none;
-}
-
-.nav-tab span.no-margin {
-  margin: 0 !important;
 }
 
 .mobile-nav {
@@ -111,25 +93,6 @@ body {
 
 .mobile-nav .mobile-links a:active {
   transform: scale(0.99);
-}
-
-.nav-tab .link-list {
-  width: 100%;
-}
-
-.nav-tab .link-list a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 0px;
-}
-
-.nav-tab .link-list a.show-link {
-  display: flex;
-  transition: all 0.3s ease;
-}
-
-.nav-tab .link-list a:active {
-  background-color: #000000;
 }
 
 .banner-container {
@@ -471,6 +434,59 @@ body {
   bottom: -90%;
 }
 
+/* modal wrapper  */
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-wrapper.hidden {
+  display: none;
+}
+
+.modal-wrapper .modal-box {
+  max-width: 500px;
+  width: 100%;
+}
+
+.modal-wrapper .modal-box {
+  background-color: #ffffff;
+  padding: 30px !important;
+  border-radius: 18px;
+}
+
+.modal-wrapper .modal-box .title h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 40px !important;
+}
+
+.modal-wrapper .modal-box .btn-container a {
+  font-size: 14px;
+  padding: 10px 30px !important;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.modal-wrapper .modal-box .btn-container .light-btn {
+  color: #000000;
+  box-shadow: 0 0 10px 5px #ccccff;
+  margin-right: 40px !important;
+}
+
+.modal-wrapper .modal-box .btn-container .dark-btn {
+  color: #ffffff;
+  background-color: #252525;
+  box-shadow: 0 0 10px 5px #737373;
+}
+
 /* dark theme  */
 body.dark-body {
   background-color: #000000;
@@ -658,9 +674,6 @@ body.dark-body .mobile-nav .mobile-logo img {
 }
 
 @media (max-width: 575px) {
-  .nav-bar {
-    flex-direction: row-reverse;
-  }
   .nav-right {
     display: none;
   }
