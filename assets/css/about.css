@@ -139,12 +139,13 @@ body {
 .about-container {
   padding: 0 400px !important;
   transition: all 0.3s ease;
+  margin-top: -50px !important;
 }
 
 .about-container .box {
   background-color: #232323;
   border-radius: 12px;
-  padding: 30px !important;
+  padding: 50px !important;
 }
 
 .about-container .box .image-container img {
@@ -345,9 +346,10 @@ body.dark-body .mobile-nav .mobile-logo img {
   }
   .about-container {
     padding: 0 20px !important;
+    margin-top: 0 !important;
   }
   .about-container .box {
-    padding: 20px !important;
+    padding: 30px !important;
   }
   .about-container .box h1 {
     font-size: 32px;
