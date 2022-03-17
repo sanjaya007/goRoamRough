@@ -32,6 +32,7 @@ $("#goRoamBody").on("click", function (e) {
 });
 
 $(".nav-tab").on("click", function () {
+  $("body").css("pointer-events", "none");
   if ($(this).attr("data-value") === "open") {
     $(".nav-bar").addClass("reset-nav");
     $("#navLogo").hide();
@@ -57,8 +58,13 @@ $(".nav-tab").on("click", function () {
         });
       }
     );
-    $(this).attr("data-value", "close");
+    // $(this).attr("data-value", "close");
     $("#goRoamBody").addClass("fixed-body");
+
+    const navTimeout = setTimeout(function () {
+      $(".nav-tab").attr("data-value", "close");
+      $("body").css("pointer-events", "all");
+    }, 1500);
   }
 });
 
@@ -66,6 +72,7 @@ $("#goRoamBody").on("click", function (e) {
   const targetEl = e.target;
   const className = $(targetEl).attr("class")?.split(" ")[0];
   if ($(".nav-tab").attr("data-value") === "close") {
+    $("body").css("pointer-events", "none");
     if (className !== "nav-tab" && className !== "link-list") {
       $(".animated-link img").animate({
         height: "0px",
@@ -97,8 +104,13 @@ $("#goRoamBody").on("click", function (e) {
           );
         }
       );
-      $(".nav-tab").attr("data-value", "open");
+      // $(".nav-tab").attr("data-value", "open");
       $("#goRoamBody").removeClass("fixed-body");
+
+      const navTimeout = setTimeout(function () {
+        $(".nav-tab").attr("data-value", "open");
+        $("body").css("pointer-events", "all");
+      }, 1500);
     }
   }
 });
