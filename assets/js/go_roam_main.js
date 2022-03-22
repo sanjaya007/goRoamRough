@@ -32,6 +32,7 @@ $("#goRoamBody").on("click", function (e) {
 });
 
 $(".nav-tab").on("click", function () {
+  console.log("clicked");
   $("body").css("pointer-events", "none");
   if ($(this).attr("data-value") === "open") {
     $(".nav-bar").addClass("reset-nav");
@@ -60,11 +61,10 @@ $(".nav-tab").on("click", function () {
     );
     // $(this).attr("data-value", "close");
     $("#goRoamBody").addClass("fixed-body");
-
     const navTimeout = setTimeout(function () {
       $(".nav-tab").attr("data-value", "close");
       $("body").css("pointer-events", "all");
-    }, 1500);
+    }, 2100);
   }
 });
 
@@ -106,11 +106,10 @@ $("#goRoamBody").on("click", function (e) {
       );
       // $(".nav-tab").attr("data-value", "open");
       $("#goRoamBody").removeClass("fixed-body");
-
       const navTimeout = setTimeout(function () {
         $(".nav-tab").attr("data-value", "open");
         $("body").css("pointer-events", "all");
-      }, 1500);
+      }, 2100);
     }
   }
 });
@@ -158,7 +157,6 @@ $(".party-tab").on("click", function (e) {
   $(this).addClass("active");
 
   const tabId = $(this).attr("id");
-  console.log(tabId);
 
   $(".party-card-container").fadeOut();
   $(`#${tabId}Container`).fadeIn("slow");
