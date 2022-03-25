@@ -61,6 +61,21 @@ body {
   word-spacing: 10px;
 }
 
+.main-container .gif-container {
+  position: relative;
+}
+
+.main-container .gif-container .gif-logo {
+  height: 50px;
+}
+
+.main-container .gif-container .gif-gif {
+  position: absolute;
+  height: 48px;
+  left: 32px;
+  bottom: -8px;
+}
+
 @media (max-width: 1023px) {
   .main-container .main-wrapper .logo-box {
     left: 50px;
