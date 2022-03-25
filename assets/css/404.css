@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/cover4.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.main-container .main-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  padding: 20px !important;
+  position: relative;
+}
+
+.main-container .main-wrapper .logo-box {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+.main-container .main-wrapper .logo-box img {
+  height: 40px;
+}
+
+.main-container .note p {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+}
+
+.main-container .btn-container a {
+  background: #ff5a10;
+  box-shadow: 0px 32px 51px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 34px !important;
+}
+
+.main-container .title h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.5;
+  word-spacing: 10px;
+}
+
+@media (max-width: 1023px) {
+  .main-container .main-wrapper .logo-box {
+    left: 50px;
+  }
+  .main-container .title h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-container .main-wrapper .logo-box {
+    left: 30px;
+  }
+  .main-container .title h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 515px) {
+  .main-container .note p br {
+    display: none;
+  }
+}
