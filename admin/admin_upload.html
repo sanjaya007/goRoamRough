@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Upload Files</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sanjaya007/flex-library@master/dist/css/sanjaya.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/admin_upload.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+      integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body id="adminBody" class="admin-body">
+    <div class="main-container">
+      <div class="left-container">
+        <div class="heading-text">
+          <h1>Admin Panel</h1>
+        </div>
+        <div class="side-nav">
+          <div class="list flex-css-row-start active">
+            <img src="./assets/image/clubs.png" alt="clubs" />
+            <p>Clubs</p>
+          </div>
+        </div>
+        <div class="logout-box flex-css">
+          <div class="list flex-css-row">
+            <img src="./assets/image/logout.png" alt="logout" />
+            <p>Log out</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="primary-container p-4">
+          <!-- mobile  -->
+          <div class="nav-tab flex-css-row-start mb-4">
+            <div class="box flex-css-column">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <!-- nav container  -->
+          <div class="nav-banner flex-css-row-sb pt-2 pb-4 mb-4">
+            <div class="title flex-css-row-start">
+              <img src="./assets/image/man.png" alt="logo" />
+              <h1>Blackbird Dashboard</h1>
+            </div>
+          </div>
+
+          <!-- tab box  -->
+          <div class="tab-box flex-bottom-row-start">
+            <a href="#" class="tab-link active" data-box="uploadFile">
+              Upload Files</a
+            >
+            <a href="#" class="tab-link" data-box="todayUploads">
+              Today's Upload</a
+            >
+          </div>
+
+          <!-- upload container  -->
+          <div class="upload-container upload-file" id="uploadFile">
+            <div class="upload-input-box flex-css-column">
+              <div class="img-container">
+                <img src="./assets/image/gallery.png" alt="gallery" />
+              </div>
+              <div class="browse-text py-4">
+                <p>
+                  Drop and drag or
+                  <span>
+                    browse your file
+                    <input type="file" />
+                  </span>
+                </p>
+              </div>
+              <div class="upload-btn">
+                <p>+ Upload</p>
+                <input type="file" />
+              </div>
+            </div>
+            <div class="note-box flex-css py-5">
+              <div class="note-text">
+                <p>* Video must be of length 15sec - 20 sec</p>
+                <p>* Picture must be of of size less than 1 MB</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- upload container  -->
+          <div class="upload-container today-uploads" id="todayUploads">
+            <div class="file-container flex-css-row-wrap">
+              <div class="file-box">
+                <div class="img-container">
+                  <img
+                    src="./assets/image/file1.png"
+                    class="bg-img"
+                    alt="file"
+                  />
+                  <img
+                    src="./assets/image/play_icon.png"
+                    class="play-icon"
+                    alt="play"
+                  />
+                </div>
+                <div class="action-container flex-css-row pt-3 pb-4">
+                  <div class="btn-text">
+                    <p>Re-Upload</p>
+                  </div>
+                  <div class="btn-text flex-css-row">
+                    <img src="./assets/image/delete_icon.png" alt="delete" />
+                    <p>Delete</p>
+                  </div>
+                </div>
+              </div>
+              <div class="file-box">
+                <div class="img-container">
+                  <img
+                    src="./assets/image/file2.png"
+                    class="bg-img"
+                    alt="file"
+                  />
+                  <img
+                    src="./assets/image/play_icon.png"
+                    class="play-icon"
+                    alt="play"
+                  />
+                </div>
+                <div class="action-container flex-css-row pt-3 pb-4">
+                  <div class="btn-text">
+                    <p>Re-Upload</p>
+                  </div>
+                  <div class="btn-text flex-css-row">
+                    <img src="./assets/image/delete_icon.png" alt="delete" />
+                    <p>Delete</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/admin_upload.js"></script>
+  </body>
+</html>
