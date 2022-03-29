@@ -327,13 +327,26 @@ body {
   background-color: #ffffff;
   margin-bottom: 30px !important;
   border-radius: 18px;
+  max-width: 1100px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.party-card-container .card-box .img-wrapper {
+  background: linear-gradient(to right, #ec2224, #8a37f2, #fb8651, #ec2224);
+  padding: 2px !important;
+  border-radius: 50%;
+  transition: all 1s ease;
 }
 
 .party-card-container .card-box .image-container {
-  max-width: 250px;
-  max-height: 250px;
-  width: 250px;
-  height: 250px;
+  max-width: 200px;
+  max-height: 200px;
+  width: 200px;
+  height: 200px;
+  padding: 40px !important;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .party-card-container .card-box .image-container img {
@@ -434,6 +447,113 @@ body {
   }
 }
 
+/* modal  */
+.story-modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 9999999;
+  padding: 100px !important;
+  display: none;
+}
+
+.story-modal .modal-box {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  position: relative;
+}
+
+.story-modal .modal-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.story-modal .modal-box .club-profile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 30px;
+  left: 30px;
+}
+
+.story-modal .modal-box .club-profile .img-wrapper {
+  background: linear-gradient(to right, #ec2224, #8a37f2, #fb8651, #ec2224);
+  padding: 2px !important;
+  border-radius: 50%;
+  transition: all 1s ease;
+}
+
+.story-modal .modal-box .club-profile .img-container {
+  max-width: 50px;
+  max-height: 50px;
+  width: 50px;
+  height: 50px;
+  padding: 6px !important;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #252627;
+}
+
+.story-modal .modal-box .club-profile .img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.story-modal .modal-box .club-profile .info-box .title h1 {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.story-modal .modal-box .club-profile .info-box .title p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.story-modal .modal-box .close-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.story-modal .modal-box .close-icon img {
+  height: 28px;
+}
+
+.story-modal .modal-box .story-range {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  padding: 0 30px !important;
+}
+
+.story-modal .modal-box .story-range .range-box {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0 10px !important;
+}
+
+.story-modal .modal-box .story-range .range-box .range-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+/* footer container  */
 .footer-container {
   background-color: #ffffff;
   padding: 100px 100px 70px 100px !important;
@@ -489,6 +609,10 @@ body.dark-body .banner-container .banner-box .filter-box p {
 }
 
 body.dark-body .party-card-container .card-box {
+  background-color: #252525;
+}
+
+body.dark-body .party-card-container .card-box .image-container {
   background-color: #252525;
 }
 

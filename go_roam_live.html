@@ -184,9 +184,16 @@
 
     <!-- party container -->
     <div class="party-card-container" id="todayPartyTabContainer">
-      <div class="card-box flex-css-row-start p-4">
-        <div class="image-container flex-css">
-          <img src="./assets/image/party1.png" alt="party" />
+      <div
+        class="card-box flex-css-row-start p-4"
+        data-title="Sugar Ktm"
+        data-img="party1"
+        data-stories-count="3"
+      >
+        <div class="img-wrapper">
+          <div class="image-container story-container flex-css">
+            <img src="./assets/image/party1.png" alt="party" />
+          </div>
         </div>
         <div class="details-container pl-5">
           <div class="heading-name">
@@ -207,9 +214,16 @@
         </div>
       </div>
 
-      <div class="card-box flex-css-row-start p-4">
-        <div class="image-container flex-css">
-          <img src="./assets/image/party2.png" alt="party" />
+      <div
+        class="card-box flex-css-row-start p-4"
+        data-title="L.O.D"
+        data-img="party2"
+        data-stories-count="4"
+      >
+        <div class="img-wrapper">
+          <div class="image-container story-container flex-css">
+            <img src="./assets/image/party2.png" alt="party" />
+          </div>
         </div>
         <div class="details-container pl-5">
           <div class="heading-name">
@@ -228,9 +242,16 @@
         </div>
       </div>
 
-      <div class="card-box flex-css-row-start p-4">
-        <div class="image-container flex-css">
-          <img src="./assets/image/party7.png" alt="party" />
+      <div
+        class="card-box flex-css-row-start p-4"
+        data-title="Black Bird"
+        data-img="party7"
+        data-stories-count="5"
+      >
+        <div class="img-wrapper">
+          <div class="image-container story-container flex-css">
+            <img src="./assets/image/party7.png" alt="party" />
+          </div>
         </div>
         <div class="details-container pl-5">
           <div class="heading-name">
@@ -249,9 +270,16 @@
         </div>
       </div>
 
-      <div class="card-box flex-css-row-start p-4">
-        <div class="image-container flex-css">
-          <img src="./assets/image/party4.png" alt="party" />
+      <div
+        class="card-box flex-css-row-start p-4"
+        data-title="Trisara"
+        data-img="party4"
+        data-stories-count="6"
+      >
+        <div class="img-wrapper">
+          <div class="image-container story-container flex-css">
+            <img src="./assets/image/party4.png" alt="party" />
+          </div>
         </div>
         <div class="details-container pl-5">
           <div class="heading-name">
@@ -270,9 +298,16 @@
         </div>
       </div>
 
-      <div class="card-box flex-css-row-start p-4">
-        <div class="image-container flex-css">
-          <img src="./assets/image/party5.png" alt="party" />
+      <div
+        class="card-box flex-css-row-start p-4"
+        data-title="Karma"
+        data-img="party5"
+        data-stories-count="5"
+      >
+        <div class="img-wrapper">
+          <div class="image-container story-container flex-css">
+            <img src="./assets/image/party5.png" alt="party" />
+          </div>
         </div>
         <div class="details-container pl-5">
           <div class="heading-name">
@@ -293,9 +328,16 @@
         </div>
       </div>
 
-      <div class="card-box flex-css-row-start p-4">
-        <div class="image-container flex-css">
-          <img src="./assets/image/party6.png" alt="party" />
+      <div
+        class="card-box flex-css-row-start p-4"
+        data-title="Busy Bee"
+        data-img="party6"
+        data-stories-count="4"
+      >
+        <div class="img-wrapper">
+          <div class="image-container story-container flex-css">
+            <img src="./assets/image/party6.png" alt="party" />
+          </div>
         </div>
         <div class="details-container pl-5">
           <div class="heading-name">
@@ -559,6 +601,36 @@
       </div>
       <div class="copyright-banner pt-5 text-center">
         <p>&#169; 2022 Roam Nepal, Inc. All rights reserved</p>
+      </div>
+    </div>
+
+    <!-- modal  -->
+    <div class="story-modal" id="storyModal">
+      <div class="modal-box">
+        <img src="./assets/image/story1.png" alt="story" />
+        <div class="club-profile flex-css-row-start">
+          <div class="img-wrapper">
+            <div class="img-container">
+              <img
+                src="./assets/image/party1.png"
+                id="modalTitleImg"
+                alt="club"
+              />
+            </div>
+          </div>
+          <div class="info-box pl-3">
+            <div class="title">
+              <h1 class="modal-club-title" id="modalClubTitle">sugar ktm</h1>
+              <p class="modal-post-time" id="modalPostTime">
+                Posted 3hours ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="close-icon" id="modalCloseIcon">
+          <img src="./assets/image/close.png" alt="close" />
+        </div>
+        <div class="story-range flex-css-row" id="storyRange"></div>
       </div>
     </div>
 
