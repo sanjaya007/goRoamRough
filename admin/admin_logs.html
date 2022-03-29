@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Logs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sanjaya007/flex-library@master/dist/css/sanjaya.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/admin_logs.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+      integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body id="adminBody" class="admin-body">
+    <div class="main-container">
+      <div class="left-container">
+        <div class="heading-text">
+          <h1>Admin Panel</h1>
+        </div>
+        <div class="side-nav">
+          <div class="list flex-css-row-start active">
+            <img src="./assets/image/clubs.png" alt="clubs" />
+            <p>Clubs</p>
+          </div>
+        </div>
+        <div class="logout-box flex-css">
+          <div class="list flex-css-row">
+            <img src="./assets/image/logout.png" alt="logout" />
+            <p>Log out</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="primary-container p-4">
+          <!-- mobile  -->
+          <div class="nav-tab flex-css-row-start mb-4">
+            <div class="box flex-css-column">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <!-- nav container  -->
+          <div class="nav-banner flex-css-row-sb pt-2 pb-4 mb-4">
+            <div class="title">
+              <h1>Roam Dashboard</h1>
+            </div>
+          </div>
+
+          <!-- table container  -->
+          <div class="table-container">
+            <div class="head-box flex-css-row-sb p-4">
+              <div class="title">
+                <h1>Log Details</h1>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Day</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Videos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="title-row">01</td>
+                    <td class="title-row">1 Feb, 2020</td>
+                    <td class="title-row">Sunday</td>
+                    <td class="title-row">07:13 pm</td>
+                    <td class="title-row">426</td>
+                    <td class="title-row">738</td>
+                  </tr>
+                  <tr>
+                    <td class="title-row">01</td>
+                    <td class="title-row">1 Feb, 2020</td>
+                    <td class="title-row">Sunday</td>
+                    <td class="title-row">07:13 pm</td>
+                    <td class="title-row">426</td>
+                    <td class="title-row">738</td>
+                  </tr>
+                  <tr>
+                    <td class="title-row">01</td>
+                    <td class="title-row">1 Feb, 2020</td>
+                    <td class="title-row">Sunday</td>
+                    <td class="title-row">07:13 pm</td>
+                    <td class="title-row">426</td>
+                    <td class="title-row">738</td>
+                  </tr>
+                  <tr>
+                    <td class="title-row">01</td>
+                    <td class="title-row">1 Feb, 2020</td>
+                    <td class="title-row">Sunday</td>
+                    <td class="title-row">07:13 pm</td>
+                    <td class="title-row">426</td>
+                    <td class="title-row">738</td>
+                  </tr>
+                  <tr>
+                    <td class="title-row">01</td>
+                    <td class="title-row">1 Feb, 2020</td>
+                    <td class="title-row">Sunday</td>
+                    <td class="title-row">07:13 pm</td>
+                    <td class="title-row">426</td>
+                    <td class="title-row">738</td>
+                  </tr>
+                  <tr>
+                    <td class="title-row">01</td>
+                    <td class="title-row">1 Feb, 2020</td>
+                    <td class="title-row">Sunday</td>
+                    <td class="title-row">07:13 pm</td>
+                    <td class="title-row">426</td>
+                    <td class="title-row">738</td>
+                  </tr>
+                  <tr>
+                    <td class="title-row">01</td>
+                    <td class="title-row">1 Feb, 2020</td>
+                    <td class="title-row">Sunday</td>
+                    <td class="title-row">07:13 pm</td>
+                    <td class="title-row">426</td>
+                    <td class="title-row">738</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/admin_logs.js"></script>
+  </body>
+</html>
