@@ -46,6 +46,7 @@ $(window).on("load", function () {
     }
   });
 
+  // tab box
   $(".tab-link").on("click", function (e) {
     e.preventDefault();
     $(".tab-link").removeClass("active");
@@ -54,5 +55,35 @@ $(window).on("load", function () {
     const tabLink = $(this).attr("data-box");
     $(".upload-container").fadeOut(0);
     $(`#${tabLink}`).fadeIn(500);
+  });
+
+  // delete alert
+  $(".delete-file-btn").on("click", function (e) {
+    e.preventDefault();
+    $("#alertModal").removeClass("hidden");
+    $("body").addClass("fixed-body");
+  });
+
+  $("#cancelDelete").on("click", function (e) {
+    e.preventDefault();
+    $("#alertModal").addClass("hidden");
+    $("body").removeClass("fixed-body");
+  });
+
+  $("#confirmDelete").on("click", function (e) {
+    e.preventDefault();
+    $("#alertModal").addClass("hidden");
+    alert("Deleted successfully !!");
+    $("body").removeClass("fixed-body");
+  });
+
+  $("#alertModal").on("click", function (e) {
+    const target = e.target;
+    const targetId = $(target).attr("id");
+
+    if (targetId === "alertModal") {
+      $("#alertModal").addClass("hidden");
+      $("body").removeClass("fixed-body");
+    }
   });
 });

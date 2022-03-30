@@ -321,19 +321,14 @@ tr:hover {
 }
 
 @media (max-width: 767px) {
-  .nav-banner {
+  .main-container .right-container .primary-container .nav-banner {
     flex-direction: column;
   }
-  .main-container .right-container .primary-container .nav-banner .title {
-    margin-bottom: 20px !important;
-  }
-  .main-container
-    .right-container
-    .primary-container
-    .nav-banner
-    .tools
-    .add-link {
-    margin-left: 0 !important;
+}
+
+@media (max-width: 550px) {
+  .primary-container {
+    padding: 0.5rem !important;
   }
 }
 

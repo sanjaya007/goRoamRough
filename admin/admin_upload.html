@@ -121,10 +121,11 @@
                   />
                 </div>
                 <div class="action-container flex-css-row pt-3 pb-4">
-                  <div class="btn-text">
+                  <div class="btn-text reupload-file-btn">
                     <p>Re-Upload</p>
+                    <input type="file" />
                   </div>
-                  <div class="btn-text flex-css-row">
+                  <div class="btn-text flex-css-row delete-file-btn">
                     <img src="./assets/image/delete_icon.png" alt="delete" />
                     <p>Delete</p>
                   </div>
@@ -144,14 +145,40 @@
                   />
                 </div>
                 <div class="action-container flex-css-row pt-3 pb-4">
-                  <div class="btn-text">
+                  <div class="btn-text reupload-file-btn">
                     <p>Re-Upload</p>
+                    <input type="file" />
                   </div>
-                  <div class="btn-text flex-css-row">
+                  <div class="btn-text delete-file-btn flex-css-row">
                     <img src="./assets/image/delete_icon.png" alt="delete" />
                     <p>Delete</p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- modal -->
+          <div class="modal-wrapper flex-css hidden" id="alertModal">
+            <div class="modal-box">
+              <div class="img-container flex-css pt-4">
+                <img src="./assets/image/alert.png" alt="alert" />
+              </div>
+              <div class="title pt-3 pb-4 mb-3">
+                <h1>Are you sure you want to delete this?</h1>
+              </div>
+              <div class="btn-container flex-css-row py-3 px-4">
+                <a href="#" class="flex-css-row delete-cancel" id="cancelDelete"
+                  >Cancel</a
+                >
+                <a
+                  href="#"
+                  class="flex-css-row delete-confirm"
+                  id="confirmDelete"
+                >
+                  <img src="./assets/image/delete_red.png" alt="delete" />
+                  Confirm</a
+                >
               </div>
             </div>
           </div>

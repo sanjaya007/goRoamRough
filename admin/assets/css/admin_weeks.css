@@ -370,6 +370,18 @@ tr:hover {
   }
 }
 
+@media (max-width: 550px) {
+  .main-container .right-container .primary-container {
+    padding: 0.5rem !important;
+  }
+  .tab-box .tab-link {
+    padding: 10px 40px !important;
+  }
+  .tab-box .tab-link.active {
+    padding: 14px 40px !important;
+  }
+}
+
 @media (max-width: 450px) {
 }
 

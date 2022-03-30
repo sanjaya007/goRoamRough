@@ -345,6 +345,22 @@ body {
   }
 }
 
+@media (max-width: 550px) {
+  .container-wrapper {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .nav-tab {
+    padding: 0.5rem !important;
+  }
+  .main-container .right-container .primary-container .nav-banner {
+    padding-left: 0.5rem !important;
+  }
+  .main-container .right-container .form-container {
+    padding: 30px 10px !important;
+  }
+}
+
 @media (max-width: 450px) {
 }
 

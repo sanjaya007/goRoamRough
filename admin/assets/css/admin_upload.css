@@ -313,6 +313,25 @@ body {
   border: 1px solid #94c6ff;
   border-radius: 100px;
   margin: 0 4px !important;
+  cursor: pointer;
+  position: relative;
+}
+
+.main-container
+  .right-container
+  .upload-container
+  .file-container
+  .file-box
+  .action-container
+  .btn-text
+  input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .main-container
@@ -348,44 +367,49 @@ body {
   height: 100vh;
   width: 100%;
   z-index: 999999;
+}
+
+.modal-wrapper.hidden {
   display: none;
 }
 
 .modal-wrapper .modal-box {
   background-color: #ffffff;
-  padding: 20px !important;
   border-radius: 14px;
   max-width: 350px;
 }
 
-.modal-wrapper .modal-box .title h1 {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.modal-wrapper.delete-modal-wrapper .modal-box {
-  min-width: 400px;
-  max-width: 400px;
-  padding: 30px !important;
-  border-radius: 10px;
-}
-
-.modal-wrapper.delete-modal-wrapper .modal-box .btn-container a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 600;
+.modal-wrapper .modal-box h1 {
+  color: #32324d;
   font-size: 14px;
-  padding: 8px 20px !important;
-  border-radius: 10px;
+  text-align: center;
 }
 
-.modal-wrapper.delete-modal-wrapper .modal-box .btn-container a.yes-btn {
-  background-color: #27ae60;
+.modal-wrapper .modal-box .btn-container {
+  border-top: 2px solid #eeeeee;
 }
 
-.modal-wrapper.delete-modal-wrapper .modal-box .btn-container a.no-btn {
-  background-color: #e74c3c;
-  margin-left: 30px !important;
+.modal-wrapper .modal-box .btn-container a {
+  min-width: 140px;
+  width: 140px;
+  padding: 10px 20px !important;
+  border-radius: 100px;
+  border: 1px solid #dcdce4;
+  color: #32324d;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 6px !important;
+}
+
+.modal-wrapper .modal-box .btn-container a img {
+  margin-right: 8px !important;
+}
+
+.modal-wrapper .modal-box .btn-container a.delete-confirm {
+  background-color: #fcecea;
+  border: 1px solid #f5c0b8;
+  color: #d02b20;
 }
 
 /* responsive  */
@@ -411,6 +435,9 @@ body {
 }
 
 @media (max-width: 767px) {
+  .main-container .right-container .upload-container.upload-file {
+    padding: 40px !important;
+  }
 }
 
 @media (max-width: 550px) {
@@ -422,6 +449,9 @@ body {
   }
   .tab-box .tab-link {
     padding: 10px 40px !important;
+  }
+  .main-container .right-container .upload-container.upload-file {
+    padding: 20px !important;
   }
 }
 
