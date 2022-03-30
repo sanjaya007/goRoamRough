@@ -522,6 +522,7 @@ body {
   position: absolute;
   top: 30px;
   right: 30px;
+  cursor: pointer;
 }
 
 .story-modal .modal-box .close-icon img {
@@ -713,6 +714,9 @@ body.dark-body .mobile-nav .mobile-logo img {
   .banner-container .banner-box {
     padding: 40px 0 !important;
   }
+  .story-modal {
+    padding: 50px !important;
+  }
   .footer-container {
     padding: 90px 50px 60px 50px !important;
   }
@@ -768,6 +772,26 @@ body.dark-body .mobile-nav .mobile-logo img {
   .party-card-container .card-box .details-container .desc .upcoming-date-text {
     flex-direction: column-reverse;
   }
+  .story-modal {
+    padding: 0px !important;
+  }
+  .story-modal .modal-box {
+    border-radius: 0px;
+  }
+  .story-modal .modal-box img {
+    border-radius: 0px;
+  }
+  .story-modal .modal-box .story-range {
+    padding: 0 10px !important;
+  }
+  .story-modal .modal-box .club-profile {
+    top: 20px;
+    left: 20px;
+  }
+  .story-modal .modal-box .close-icon {
+    top: 20px;
+    right: 20px;
+  }
   .party-card-container
     .card-box
     .details-container
@@ -819,12 +843,14 @@ body.dark-body .mobile-nav .mobile-logo img {
   .party-card-container .card-box {
     padding: 1rem !important;
   }
+  .party-card-container .card-box .img-wrapper {
+    margin-bottom: 10px !important;
+  }
   .party-card-container .card-box .image-container {
     max-width: 150px;
     max-height: 150px;
     width: 150px;
     height: 150px;
-    margin-bottom: 10px !important;
   }
   .party-card-container .card-box .details-container .heading-name h1 {
     font-size: 20px;
