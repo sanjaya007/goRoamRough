@@ -203,6 +203,7 @@ $(window).on("load", function () {
   $("#modalCloseIcon").on("click", function () {
     $("#storyModal").fadeOut();
     $("body").removeClass("fixed-body");
+    $("#modalStoryImg").addClass("not-loaded");
   });
 
   $(".modal-btn").on("click", function () {
@@ -223,7 +224,7 @@ $(window).on("load", function () {
       }
     }
 
-    // console.log(storyCounter);
+    console.log(storyCounter);
 
     $(currentElement).attr("data-current-count", `${storyCounter}`);
     $("#modalStoryImg").attr("src", `./assets/image/story${storyCounter}.png`);
