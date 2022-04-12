@@ -164,8 +164,12 @@ $(window).on("load", function () {
   });
 
   // stories container
-  function rangeHtml(count) {
-    return `<div class="range-box range-box${count}">
+  let currentElement = undefined;
+  let maxCounter = "";
+  let storyCounter = "";
+
+  function rangeHtml(count, currentCount) {
+    return `<div class="range-box range-box${count} ${count <= currentCount ? "active" : ""}" data-range-count=${count}>
     <div class="range-bar"></div>
   </div>`;
   }
@@ -175,13 +179,21 @@ $(window).on("load", function () {
     const storyTitle = $(parentEl).attr("data-title");
     const imgData = $(parentEl).attr("data-img");
     const storiesCount = $(parentEl).attr("data-stories-count");
+    const currentCount = $(parentEl).attr("data-current-count");
+
+    currentElement = parentEl;
+    maxCounter = parseInt(storiesCount);
+    storyCounter = parseInt(currentCount);
+
+    $("#modalStoryImg").attr("src", `./assets/image/story${currentCount}.png`);
+    $("#modalStoryImg").removeClass("not-loaded");
 
     $("#modalTitleImg").attr("src", `./assets/image/${imgData}.png`);
     $("#modalClubTitle").text(storyTitle);
 
     $("#storyRange").html("");
     for (let i = 0; i < parseInt(storiesCount); i++) {
-      $("#storyRange").append(rangeHtml(i + 1));
+      $("#storyRange").append(rangeHtml(i + 1, parseInt(currentCount)));
     }
 
     $("#storyModal").fadeIn();
@@ -191,6 +203,36 @@ $(window).on("load", function () {
   $("#modalCloseIcon").on("click", function () {
     $("#storyModal").fadeOut();
     $("body").removeClass("fixed-body");
+  });
+
+  $(".modal-btn").on("click", function () {
+    const direction = $(this).attr("id");
+
+    $("#modalStoryImg").attr("src", `./assets/image/spinner.png`);
+    $("#modalStoryImg").addClass("not-loaded");
+
+    if (direction === "right") {
+      storyCounter++;
+      if (storyCounter > maxCounter) {
+        storyCounter = 1;
+      }
+    } else {
+      storyCounter--;
+      if (storyCounter < 1) {
+        storyCounter = 1;
+      }
+    }
+
+    // console.log(storyCounter);
+
+    $(currentElement).attr("data-current-count", `${storyCounter}`);
+    $("#modalStoryImg").attr("src", `./assets/image/story${storyCounter}.png`);
+    $("#modalStoryImg").removeClass("not-loaded");
+
+    $(".range-box").removeClass("active");
+    for (let i = 1; i <= storyCounter; i++) {
+      $(`.range-box${i}`).addClass("active");
+    }
   });
 
   $(window).scroll(function () {

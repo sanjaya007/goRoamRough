@@ -464,6 +464,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 24px;
+  background-color: #000000;
   position: relative;
 }
 
@@ -474,12 +475,18 @@ body {
   border-radius: 24px;
 }
 
+.story-modal .modal-box img.not-loaded {
+  height: 50px;
+  width: 50px;
+}
+
 .story-modal .modal-box .club-profile {
   position: absolute;
   top: 0;
   left: 0;
   top: 30px;
   left: 30px;
+  z-index: 1;
 }
 
 .story-modal .modal-box .club-profile .img-wrapper {
@@ -523,6 +530,7 @@ body {
   top: 30px;
   right: 30px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .story-modal .modal-box .close-icon img {
@@ -535,6 +543,7 @@ body {
   left: 0;
   width: 100%;
   padding: 0 30px !important;
+  z-index: 1;
 }
 
 .story-modal .modal-box .story-range .range-box {
@@ -552,6 +561,25 @@ body {
   left: 0;
   height: 100%;
   background-color: #ffffff;
+}
+
+.story-modal .modal-box .story-range .range-box.active .range-bar {
+  width: 100%;
+}
+
+.story-modal .modal-box .modal-btn {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  top: 0;
+}
+
+.story-modal .modal-box .modal-btn.left-btn {
+  left: 0;
+}
+
+.story-modal .modal-box .modal-btn.right-btn {
+  right: 0;
 }
 
 /* footer container  */
@@ -880,6 +908,9 @@ body.dark-body .mobile-nav .mobile-logo img {
     .upcoming-date-text
     .left-text {
     text-align: center;
+  }
+  .story-modal .modal-box .modal-btn {
+    width: 35%;
   }
   .footer-container .footer-box {
     display: flex;

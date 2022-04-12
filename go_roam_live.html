@@ -188,7 +188,8 @@
         class="card-box flex-css-row-start p-4"
         data-title="Sugar Ktm"
         data-img="party1"
-        data-stories-count="3"
+        data-stories-count="6"
+        data-current-count="1"
       >
         <div class="img-wrapper">
           <div class="image-container story-container flex-css">
@@ -219,6 +220,7 @@
         data-title="L.O.D"
         data-img="party2"
         data-stories-count="4"
+        data-current-count="1"
       >
         <div class="img-wrapper">
           <div class="image-container story-container flex-css">
@@ -247,6 +249,7 @@
         data-title="Black Bird"
         data-img="party7"
         data-stories-count="5"
+        data-current-count="1"
       >
         <div class="img-wrapper">
           <div class="image-container story-container flex-css">
@@ -275,6 +278,7 @@
         data-title="Trisara"
         data-img="party4"
         data-stories-count="6"
+        data-current-count="1"
       >
         <div class="img-wrapper">
           <div class="image-container story-container flex-css">
@@ -303,6 +307,7 @@
         data-title="Karma"
         data-img="party5"
         data-stories-count="5"
+        data-current-count="1"
       >
         <div class="img-wrapper">
           <div class="image-container story-container flex-css">
@@ -333,6 +338,7 @@
         data-title="Busy Bee"
         data-img="party6"
         data-stories-count="4"
+        data-current-count="1"
       >
         <div class="img-wrapper">
           <div class="image-container story-container flex-css">
@@ -606,8 +612,13 @@
 
     <!-- modal  -->
     <div class="story-modal" id="storyModal">
-      <div class="modal-box">
-        <img src="./assets/image/story1.png" alt="story" />
+      <div class="modal-box flex-css">
+        <img
+          src="./assets/image/spinner.gif"
+          class="not-loaded"
+          id="modalStoryImg"
+          alt="story"
+        />
         <div class="club-profile flex-css-row-start">
           <div class="img-wrapper">
             <div class="img-container">
@@ -631,6 +642,8 @@
           <img src="./assets/image/close.png" alt="close" />
         </div>
         <div class="story-range flex-css-row" id="storyRange"></div>
+        <div class="modal-btn left-btn" id="left"></div>
+        <div class="modal-btn right-btn" id="right"></div>
       </div>
     </div>
 
