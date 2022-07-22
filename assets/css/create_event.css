@@ -1,0 +1,147 @@
+/* form container  */
+.form-container {
+  background-color: #161616;
+}
+
+.form-container .title h1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.form-container .form-box {
+  padding: 40px !important;
+  background-color: #1e1e1e;
+}
+
+.form-container .form-box .title h2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-container .form-box .input-box {
+  width: 50%;
+  margin-bottom: 20px !important;
+}
+
+.form-container .form-box .input-box.full-box {
+  width: 100%;
+}
+
+.form-container .form-box .input-box label {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 6px !important;
+}
+
+.form-container .form-box .input-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #7a7a7a;
+  border-radius: 4px;
+  padding: 8px 10px !important;
+  font-size: 12px;
+  color-scheme: dark;
+  color: #e9e9e9;
+}
+
+.form-container .form-box .input-box select {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #7a7a7a;
+  border-radius: 4px;
+  padding: 8px 10px !important;
+  font-size: 12px;
+  color-scheme: dark;
+  color: #e9e9e9;
+}
+
+.form-container .form-box .input-box .input-wrapper {
+  position: relative;
+}
+
+.form-container .form-box .input-box .input-wrapper input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.form-container .form-box .input-box .input-wrapper img {
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 12px;
+  height: 14px;
+  width: 14px;
+  pointer-events: none;
+}
+
+.form-container .form-box .input-box textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #7a7a7a;
+  border-radius: 4px;
+  padding: 8px 10px !important;
+  font-size: 12px;
+  color-scheme: dark;
+  color: #e9e9e9;
+}
+
+.form-container .form-box .input-box small {
+  color: #959595;
+  font-size: 12px;
+}
+
+.form-container .form-box .btn-container .btn-link {
+  font-size: 12px;
+  padding: 8px 30px !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-container .form-box .btn-container .btn-link.create-btn {
+  background-color: #ff5a10;
+  color: #e9e9e9;
+  border: 1px solid #ff5a10;
+}
+
+.form-container .form-box .btn-container .btn-link.cancel-btn {
+  background-color: transparent;
+  color: #959595;
+  border: 1px solid #959595;
+  margin-left: 20px !important;
+}
+
+/* responsive  */
+
+@media (max-width: 767px) {
+  .form-container .form-box {
+    padding: 20px !important;
+  }
+  .form-container .form-box .input-row {
+    flex-direction: column;
+  }
+  .form-container .form-box .input-box {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .form-container .form-box .input-box.hidden {
+    display: none;
+  }
+  .form-container .form-box .btn-container .btn-link {
+    padding: 8px 20px !important;
+  }
+  .form-container .form-box .btn-container {
+    justify-content: center;
+  }
+}

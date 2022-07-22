@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Roam | Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sanjaya007/flex-library@master/dist/css/sanjaya.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/common_new.css" />
+    <link rel="stylesheet" href="./assets/css/profile.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="goRoamBody" class="go-roam-body dark-body">
+    <!-- mobile nav -->
+    <div class="mobile-nav">
+      <div class="head-nav-box flex-css-row-sb">
+        <div class="close-icon" id="closeIcon">
+          <img src="./assets/image/close1.png" alt="close" />
+        </div>
+        <div class="mobile-logo">
+          <img src="./assets/image/white_logo.png" class="mb-link" alt="logo" />
+        </div>
+      </div>
+      <div class="mobile-links flex-top-column-start">
+        <a href="#" class="mb-link flex-css-row nav-lang">
+          <img src="./assets/image/lang-icon-white.png" alt="lang" />
+          English
+        </a>
+        <a href="#" class="mb-link flex-css-row">What are we</a>
+        <a href="#" class="mb-link flex-css-row">Notifications</a>
+        <a href="#" class="mb-link flex-css-row" id="profileMbLink">Profile</a>
+        <div class="profile-link" id="profileLinkList" style="display: none">
+          <a href="./profile.html" class="mb-link flex-css-row"
+            >Sanjaya Paudel</a
+          >
+          <a href="#" class="mb-link flex-css-row">My Events</a>
+          <a href="#" class="mb-link flex-css-row">Sign Out</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav container -->
+    <div class="nav-container content-container">
+      <div class="nav-bar flex-css-row-sb">
+        <div class="nav-left" id="navLogo">
+          <a href="./go_roam_live.html" class="roam-logo">
+            <img src="./assets/image/white_logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="nav-right flex-css-row-start">
+          <a href="#" class="nav-lang">
+            <img src="./assets/image/lang-icon-white.png" alt="lang" />
+            English
+          </a>
+          <a href="#">Whate are we</a>
+          <a href="#" class="nav-bell">
+            <div class="img-wrapper">
+              <img src="./assets/image/bell.png" alt="bell" />
+              <div class="dot"></div>
+            </div>
+          </a>
+          <div class="nav-avatar">
+            <div class="avatar-wrapper img-wrapper" id="avatarImg">
+              <img src="./assets/image/profile1.jpg" alt="profile" />
+            </div>
+            <div
+              class="profile-dropdown"
+              id="profileDropdown"
+              style="display: none"
+            >
+              <img
+                class="arrow-icon"
+                src="./assets/image/arrow-up.png"
+                alt="arrow"
+              />
+              <a href="./profile.html" class="dropdown-link">Sanjaya Paudel</a>
+              <a href="#" class="dropdown-link">My Events</a>
+              <a href="#" class="dropdown-link">Sign Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-tab flex-css-column" id="navTab" data-value="open">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- profile banner  -->
+    <div class="profile-banner content-container">
+      <div class="profile-box flex-css-row-start py-4">
+        <div class="img-container">
+          <img src="./assets/image/profile1.jpg" alt="profile" />
+        </div>
+        <div class="profile-desc pl-4">
+          <h1>Sanjaya Paudel</h1>
+          <p>Joined on 5th February</p>
+          <p>Last Active: 5 days ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- tab banner  -->
+    <div class="tab-banner content-container">
+      <div class="tab-box flex-css-row-start">
+        <a href="#" class="tab-link flex-css active" data-content="activeEvent"
+          >Active Events</a
+        >
+        <a href="#" class="tab-link flex-css" data-content="pastEvent"
+          >Past Events</a
+        >
+        <a href="#" class="tab-link flex-css" data-content="savedEvent"
+          >Saved Events</a
+        >
+      </div>
+    </div>
+
+    <!-- .event container  -->
+    <div class="event-container">
+      <div class="event-box" id="activeEvent">
+        <div class="box flex-top-row-start content-container">
+          <div class="left-box">
+            <h1>
+              Event : An introduction to <br />
+              development skills
+            </h1>
+            <p>Location : <span> Lagankhel, Whitehouse Mira Road </span></p>
+            <p>Date and time : <span> Sun, Jul 24, 2022, 11:00 AM </span></p>
+          </div>
+          <div class="right-box">
+            <h5>
+              Learning even basic personal development skills can promote
+              balance, calmness, and mental focus andenhance your personal self
+              growth.
+            </h5>
+            <div class="btn-container flex-css-row-start">
+              <a href="#">View List</a>
+            </div>
+          </div>
+        </div>
+        <div class="box flex-top-row-start content-container">
+          <div class="left-box">
+            <h1>
+              Event : An introduction to <br />
+              development skills
+            </h1>
+            <p>Location : <span> Lagankhel, Whitehouse Mira Road </span></p>
+            <p>Date and time : <span> Sun, Jul 24, 2022, 11:00 AM </span></p>
+          </div>
+          <div class="right-box">
+            <h5>
+              Learning even basic personal development skills can promote
+              balance, calmness, and mental focus andenhance your personal self
+              growth.
+            </h5>
+            <div class="btn-container flex-css-row-start">
+              <a href="#">View List</a>
+            </div>
+          </div>
+        </div>
+        <div class="box flex-top-row-start content-container">
+          <div class="left-box">
+            <h1>
+              Event : An introduction to <br />
+              development skills
+            </h1>
+            <p>Location : <span> Lagankhel, Whitehouse Mira Road </span></p>
+            <p>Date and time : <span> Sun, Jul 24, 2022, 11:00 AM </span></p>
+          </div>
+          <div class="right-box">
+            <h5>
+              Learning even basic personal development skills can promote
+              balance, calmness, and mental focus andenhance your personal self
+              growth.
+            </h5>
+            <div class="btn-container flex-css-row-start">
+              <a href="#">View List</a>
+            </div>
+          </div>
+        </div>
+        <div class="box flex-top-row-start content-container">
+          <div class="left-box">
+            <h1>
+              Event : An introduction to <br />
+              development skills
+            </h1>
+            <p>Location : <span> Lagankhel, Whitehouse Mira Road </span></p>
+            <p>Date and time : <span> Sun, Jul 24, 2022, 11:00 AM </span></p>
+          </div>
+          <div class="right-box">
+            <h5>
+              Learning even basic personal development skills can promote
+              balance, calmness, and mental focus andenhance your personal self
+              growth.
+            </h5>
+            <div class="btn-container flex-css-row-start">
+              <a href="#">View List</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="event-box" id="pastEvent" style="display: none">
+        <div class="box flex-top-row-start content-container">
+          <div class="left-box">
+            <h1>
+              Event : An introduction to <br />
+              development skills
+            </h1>
+            <p>Location : <span> Lagankhel, Whitehouse Mira Road </span></p>
+            <p>Date and time : <span> Sun, Jul 24, 2022, 11:00 AM </span></p>
+          </div>
+          <div class="right-box">
+            <h5>
+              Learning even basic personal development skills can promote
+              balance, calmness, and mental focus andenhance your personal self
+              growth.
+            </h5>
+            <div class="btn-container flex-css-row-start">
+              <p>Roamers: <span>400</span></p>
+              <a href="#">View List</a>
+            </div>
+          </div>
+        </div>
+        <div class="box flex-top-row-start content-container">
+          <div class="left-box">
+            <h1>
+              Event : An introduction to <br />
+              development skills
+            </h1>
+            <p>Location : <span> Lagankhel, Whitehouse Mira Road </span></p>
+            <p>Date and time : <span> Sun, Jul 24, 2022, 11:00 AM </span></p>
+          </div>
+          <div class="right-box">
+            <h5>
+              Learning even basic personal development skills can promote
+              balance, calmness, and mental focus andenhance your personal self
+              growth.
+            </h5>
+            <div class="btn-container flex-css-row-start">
+              <p>Roamers: <span>400</span></p>
+              <a href="#">View List</a>
+            </div>
+          </div>
+        </div>
+        <div class="box flex-top-row-start content-container">
+          <div class="left-box">
+            <h1>
+              Event : An introduction to <br />
+              development skills
+            </h1>
+            <p>Location : <span> Lagankhel, Whitehouse Mira Road </span></p>
+            <p>Date and time : <span> Sun, Jul 24, 2022, 11:00 AM </span></p>
+          </div>
+          <div class="right-box">
+            <h5>
+              Learning even basic personal development skills can promote
+              balance, calmness, and mental focus andenhance your personal self
+              growth.
+            </h5>
+            <div class="btn-container flex-css-row-start">
+              <p>Roamers: <span>400</span></p>
+              <a href="#">View List</a>
+            </div>
+          </div>
+        </div>
+        <div class="box flex-top-row-start content-container">
+          <div class="left-box">
+            <h1>
+              Event : An introduction to <br />
+              development skills
+            </h1>
+            <p>Location : <span> Lagankhel, Whitehouse Mira Road </span></p>
+            <p>Date and time : <span> Sun, Jul 24, 2022, 11:00 AM </span></p>
+          </div>
+          <div class="right-box">
+            <h5>
+              Learning even basic personal development skills can promote
+              balance, calmness, and mental focus andenhance your personal self
+              growth.
+            </h5>
+            <div class="btn-container flex-css-row-start">
+              <p>Roamers: <span>400</span></p>
+              <a href="#">View List</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="event-box" id="savedEvent" style="display: none">
+        <div class="box flex-top-row-start content-container">
+          <div class="left-box">
+            <h1>
+              Event : An introduction to <br />
+              development skills
+            </h1>
+            <p>Location : <span> Lagankhel, Whitehouse Mira Road </span></p>
+            <p>Date and time : <span> Sun, Jul 24, 2022, 11:00 AM </span></p>
+          </div>
+          <div class="right-box">
+            <h5>
+              Learning even basic personal development skills can promote
+              balance, calmness, and mental focus andenhance your personal self
+              growth.
+            </h5>
+            <div class="btn-container flex-css-row-start">
+              <p>Roamers: <span>400</span></p>
+              <a href="#">View List</a>
+            </div>
+          </div>
+        </div>
+        <div class="box flex-top-row-start content-container">
+          <div class="left-box">
+            <h1>
+              Event : An introduction to <br />
+              development skills
+            </h1>
+            <p>Location : <span> Lagankhel, Whitehouse Mira Road </span></p>
+            <p>Date and time : <span> Sun, Jul 24, 2022, 11:00 AM </span></p>
+          </div>
+          <div class="right-box">
+            <h5>
+              Learning even basic personal development skills can promote
+              balance, calmness, and mental focus andenhance your personal self
+              growth.
+            </h5>
+            <div class="btn-container flex-css-row-start">
+              <a href="#">View List</a>
+            </div>
+          </div>
+        </div>
+        <div class="box flex-top-row-start content-container">
+          <div class="left-box">
+            <h1>
+              Event : An introduction to <br />
+              development skills
+            </h1>
+            <p>Location : <span> Lagankhel, Whitehouse Mira Road </span></p>
+            <p>Date and time : <span> Sun, Jul 24, 2022, 11:00 AM </span></p>
+          </div>
+          <div class="right-box">
+            <h5>
+              Learning even basic personal development skills can promote
+              balance, calmness, and mental focus andenhance your personal self
+              growth.
+            </h5>
+            <div class="btn-container flex-css-row-start">
+              <p>Roamers: <span>400</span></p>
+              <a href="#">View List</a>
+            </div>
+          </div>
+        </div>
+        <div class="box flex-top-row-start content-container">
+          <div class="left-box">
+            <h1>
+              Event : An introduction to <br />
+              development skills
+            </h1>
+            <p>Location : <span> Lagankhel, Whitehouse Mira Road </span></p>
+            <p>Date and time : <span> Sun, Jul 24, 2022, 11:00 AM </span></p>
+          </div>
+          <div class="right-box">
+            <h5>
+              Learning even basic personal development skills can promote
+              balance, calmness, and mental focus andenhance your personal self
+              growth.
+            </h5>
+            <div class="btn-container flex-css-row-start">
+              <a href="#">View List</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer container  -->
+    <div class="footer-container" id="footerContainer">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 footer-box">
+          <div class="footer-logo">
+            <img src="./assets/image/white_logo.png" alt="logo" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 footer-box">
+          <div class="footer-links">
+            <p>Company</p>
+            <div class="link-list flex-top-column">
+              <a href="#">About</a>
+              <a href="#">Contact Us</a>
+              <a href="#">List your property</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 footer-box">
+          <div class="footer-links">
+            <p>Terms and Policies</p>
+            <div class="link-list flex-top-column">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms of use</a>
+              <a href="#">Room Rewards Terms</a>
+              <a href="#"> Accessibility</a>
+              <a href="#">
+                Do not sell my <br />
+                personal information</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 footer-box">
+          <div class="footer-links">
+            <p>Help</p>
+            <div class="link-list flex-top-column">
+              <a href="#"> Support </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-banner pt-5">
+        <p>&#169; <span>2022 Roam </span> &nbsp; All rights reserved</p>
+      </div>
+    </div>
+
+    <script src="./assets/js/common_new.js"></script>
+    <script src="./assets/js/profile.js"></script>
+  </body>
+</html>

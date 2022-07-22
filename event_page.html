@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Roam | Event Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sanjaya007/flex-library@master/dist/css/sanjaya.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/common_new.css" />
+    <link rel="stylesheet" href="./assets/css/event_page.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="goRoamBody" class="go-roam-body dark-body">
+    <!-- mobile nav -->
+    <div class="mobile-nav">
+      <div class="head-nav-box flex-css-row-sb">
+        <div class="close-icon" id="closeIcon">
+          <img src="./assets/image/close1.png" alt="close" />
+        </div>
+        <div class="mobile-logo">
+          <img src="./assets/image/white_logo.png" class="mb-link" alt="logo" />
+        </div>
+      </div>
+      <div class="mobile-links flex-top-column-start">
+        <a href="#" class="mb-link flex-css-row nav-lang">
+          <img src="./assets/image/lang-icon-white.png" alt="lang" />
+          English
+        </a>
+        <a href="#" class="mb-link flex-css-row">What are we</a>
+        <a href="#" class="mb-link flex-css-row">Notifications</a>
+        <a href="#" class="mb-link flex-css-row" id="profileMbLink">Profile</a>
+        <div class="profile-link" id="profileLinkList" style="display: none">
+          <a href="./profile.html" class="mb-link flex-css-row"
+            >Sanjaya Paudel</a
+          >
+          <a href="#" class="mb-link flex-css-row">My Events</a>
+          <a href="#" class="mb-link flex-css-row">Sign Out</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- event-banner -->
+    <div class="event-banner">
+      <!-- nav container -->
+      <div class="nav-container content-container">
+        <div class="nav-bar flex-css-row-sb">
+          <div class="nav-left" id="navLogo">
+            <a href="./go_roam_live.html" class="roam-logo">
+              <img src="./assets/image/white_logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="nav-right flex-css-row-start">
+            <a href="#" class="nav-lang">
+              <img src="./assets/image/lang-icon-white.png" alt="lang" />
+              English
+            </a>
+            <a href="#">Whate are we</a>
+            <a href="#" class="nav-bell">
+              <div class="img-wrapper">
+                <img src="./assets/image/bell.png" alt="bell" />
+                <div class="dot"></div>
+              </div>
+            </a>
+            <div class="nav-avatar">
+              <div class="avatar-wrapper img-wrapper" id="avatarImg">
+                <img src="./assets/image/profile1.jpg" alt="profile" />
+              </div>
+              <div
+                class="profile-dropdown"
+                id="profileDropdown"
+                style="display: none"
+              >
+                <img
+                  class="arrow-icon"
+                  src="./assets/image/arrow-up.png"
+                  alt="arrow"
+                />
+                <a href="./profile.html" class="dropdown-link"
+                  >Sanjaya Paudel</a
+                >
+                <a href="#" class="dropdown-link">My Events</a>
+                <a href="#" class="dropdown-link">Sign Out</a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-tab flex-css-column" id="navTab" data-value="open">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- event container  -->
+    <div class="event-container content-container pb-5">
+      <div class="event-box flex-top-row-sb">
+        <div class="left-box">
+          <div class="avatar-container flex-css">
+            <div class="img-container">
+              <img src="./assets/image/event1.png" alt="profile" />
+            </div>
+          </div>
+          <div class="location-text flex-css-column pt-4">
+            <h1>Location</h1>
+            <p>Koteshwor, Kathmandu</p>
+            <a href="#mapContainer">view on map</a>
+          </div>
+          <div class="date-text flex-css-column py-4">
+            <h1>Date and time</h1>
+            <p>Sun, Jul 24, 2022, 11:00 AM</p>
+          </div>
+          <div class="price-text flex-css-column pb-4">
+            <h1>Price</h1>
+            <p>Rs. 120.00</p>
+          </div>
+          <div class="register-btn flex-css">
+            <a href="#">Register</a>
+          </div>
+        </div>
+        <div class="right-box pl-5 py-4">
+          <div class="desc-container">
+            <div class="title pb-3">
+              <h5>Webinar</h5>
+              <h1>An introduction to development skills</h1>
+              <p>by Quality Circle</p>
+            </div>
+            <div class="info-text pb-4">
+              <p>
+                Learning even basic personal development skills can promote
+                balance, calmness, and mental focus andenhance your personal
+                self growth. If stress has you anxious, tense and worried,
+                consider trying meditation. Spending even a few minutes in
+                meditation can help restore your calm and inner peace.
+                <br />
+                <br />
+                Anyone can practice meditation. It's simple and inexpensive. And
+                it doesn't require any special equipment. And you can practice
+                meditation wherever you are — whether you're out for a walk,
+                riding the bus, waiting at the doctor's office or even in the
+                middle of a difficult business meeting.
+              </p>
+            </div>
+            <div class="info-text pb-3">
+              <h4>ALL ARE WELCOME</h4>
+              <p>
+                This class is designed for students and young professionals
+                living in Covid times. All are welcome. Beginners and
+                experienced meditation practitioners alike. Religious and
+                non-religious. People of all walks of life who want to learn to
+                hone balance and happiness in their life, with a powerful
+                career.
+              </p>
+            </div>
+          </div>
+          <div class="count-text">
+            <p><span>400+</span> Roamers are going</p>
+          </div>
+          <div class="question-text flex-css-row-start pt-2 pb-4">
+            <p>Are you going?</p>
+            <div class="icon-box pl-2">
+              <img src="./assets/image/yes.png" alt="yes" />
+              <img src="./assets/image/no.png" alt="no" />
+            </div>
+          </div>
+          <div class="share-box flex-css-row-start py-4">
+            <p>Share with Friends</p>
+            <div class="icon-box flex-css-row-start pl-2">
+              <a href="https://www.instagram.com/armis_tech/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/TechArmis" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.3565013759808!2d83.93939751540583!3d28.226857209075508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595e4e7fd27cb%3A0x513f7435927e9d9e!2sCoco%20Beach%20Pame!5e0!3m2!1sen!2snp!4v1658481421620!5m2!1sen!2snp"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer container  -->
+    <div class="footer-container" id="footerContainer">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 footer-box">
+          <div class="footer-logo">
+            <img src="./assets/image/white_logo.png" alt="logo" />
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 footer-box">
+          <div class="footer-links">
+            <p>Company</p>
+            <div class="link-list flex-top-column">
+              <a href="#">About</a>
+              <a href="#">Contact Us</a>
+              <a href="#">List your property</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 footer-box">
+          <div class="footer-links">
+            <p>Terms and Policies</p>
+            <div class="link-list flex-top-column">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms of use</a>
+              <a href="#">Room Rewards Terms</a>
+              <a href="#"> Accessibility</a>
+              <a href="#">
+                Do not sell my <br />
+                personal information</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 footer-box">
+          <div class="footer-links">
+            <p>Help</p>
+            <div class="link-list flex-top-column">
+              <a href="#"> Support </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-banner pt-5">
+        <p>&#169; <span>2022 Roam </span> &nbsp; All rights reserved</p>
+      </div>
+    </div>
+
+    <script src="./assets/js/common_new.js"></script>
+    <script src="./assets/js/event_page.js"></script>
+  </body>
+</html>
